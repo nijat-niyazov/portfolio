@@ -1,3 +1,4 @@
+import { SideBar } from "@/components";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="flex items-center">
+          <SideBar />
+          <div className="grow bg-slate-600">{children}</div>
+        </main>
+      </body>
     </html>
   );
 }

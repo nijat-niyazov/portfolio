@@ -1,3 +1,3 @@
 export default function Home() {
-  return <h3 className=" m-10 font-bold text-4xl italic bg-primary/50">Next Template</h3>;
+  return <h3 className=" font-bold text-4xl italic min-h-screen  w-full">Next Template</h3>;
 }
