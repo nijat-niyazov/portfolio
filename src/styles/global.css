@@ -11,12 +11,21 @@
 
 @layer base {
   html {
-    --primary: #ffbd39;
+    --primary: 255, 189, 57;
     --secondary: 2, 134, 67;
     --text: 3, 8, 31;
     --bej: 233, 233, 233;
     --grey: 250, 250, 250;
     --faq: 250, 250, 250;
+  }
+  .social-link:hover svg {
+    fill: #000;
+  }
+  .navigation-link:hover svg {
+    stroke: rgba(var(--primary));
+  }
+  .active-link svg {
+    stroke: rgba(var(--primary));
   }
 
   html[data-theme="dark"] {

@@ -1,7 +1,7 @@
 import { SideBar } from "@/components";
+import "@/styles/global.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,11 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <main className="flex items-center">
-          <SideBar />
-          <div className="grow bg-slate-600">{children}</div>
+        <main className="flex relative">
+          <div className="hidden md:block">
+            <SideBar />
+          </div>
+          <div className="grow">{children}</div>
         </main>
       </body>
     </html>
