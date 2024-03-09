@@ -54,13 +54,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 } */
-
-/* ---------------------------------- Rules --------------------------------- */
-/* @layer components {
-  .container {
-    @apply mx-auto md:p-0 p-4 md:w-[90%];
-  }
-  .flex-centered {
-    @apply flex items-center justify-center;
-  }
-} */

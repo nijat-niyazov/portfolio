@@ -1,11 +1,12 @@
-import { About, Home } from "@/sections";
+import { About, Home, Resume } from "@/containers";
 
 export default function HomePage() {
   return (
-    <h3 className=" font-bold text-4xl italic min-h-screen  w-full">
+    <div className=" grow">
       <Home />
 
       <About />
-    </h3>
+      <Resume />
+    </div>
   );
 }
