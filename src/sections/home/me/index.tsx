@@ -8,7 +8,7 @@ const Me = () => {
   return (
     <h3 className="text-2xl font-normal">
       I'm
-      <TypeAnimation sequence={sequence} wrapper="span" speed={50} className="pb-3 border-b-2 border-white " repeat={Infinity} />
+      <TypeAnimation sequence={sequence} wrapper="span" speed={50} className="pb-2 border-b-4 border-primary " repeat={Infinity} />
     </h3>
   );
 };

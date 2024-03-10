@@ -14,7 +14,7 @@ const Home = () => {
       </header>
 
       <div className=" absolute top-96 md:top-80 left-5 md:left-56 text-white not-italic">
-        <h1 className="text-4xl md:text-5xl mb-5 font-bold">Nijat Niyazov</h1>
+        <h1 className="text-4xl md:text-5xl mb-5 font-bold ">Nijat Niyazov</h1>
         <Me />
       </div>
     </section>

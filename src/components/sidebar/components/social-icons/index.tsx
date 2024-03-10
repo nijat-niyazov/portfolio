@@ -1,12 +1,12 @@
-import { FacebookIcon, GithubIcon, InstragramIcon, LinkedinIcon, TelegramIcon } from "@/assets";
+import { FacebookIcon, GithubIcon, InstragramIcon, LinkedinIcon, TelegramIcon } from "@/assets/icons";
 import Link from "next/link";
 
 const socialIcons = [
-  { url: "#", icon: GithubIcon },
-  { url: "#", icon: LinkedinIcon },
-  { url: "#", icon: TelegramIcon },
-  { url: "#", icon: InstragramIcon },
-  { url: "#", icon: FacebookIcon },
+  { url: "https://github.com/nijat-niyazov", icon: GithubIcon },
+  { url: "https://www.linkedin.com/in/nijatniyazov", icon: LinkedinIcon },
+  { url: "https://www.telegram.com/@nijatniyazovv", icon: TelegramIcon },
+  { url: "https://instagram.com/niyazovnijatt", icon: InstragramIcon },
+  { url: "https://www.facebook.com/nijatniyazov", icon: FacebookIcon },
 ];
 
 const SocialIcons = () => {

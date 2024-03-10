@@ -1,4 +1,4 @@
-import { EnvelopeIcon, HomeIcon, PersonIcon, Portfolio } from "@/assets";
+import { EnvelopeIcon, HomeIcon, PersonIcon, Portfolio } from "@/assets/icons";
 import { cn } from "@/utils";
 import Link from "next/link";
 
@@ -6,7 +6,7 @@ const navigation = [
   { url: "#", icon: HomeIcon, name: "Home" },
   { url: "#", icon: PersonIcon, name: "About" },
   { url: "#", icon: HomeIcon, name: "Resume" },
-  { url: "#", icon: Portfolio, name: "Works" },
+  { url: "#", icon: Portfolio, name: "Projects" },
   { url: "#", icon: EnvelopeIcon, name: "Contact" },
 ];
 
