@@ -11,9 +11,10 @@ import EnvelopeIcon from "./Envelope";
 import HomeIcon from "./HomeIcon";
 import PersonIcon from "./Person";
 import Portfolio from "./Portfolio";
+import Skills from "./Skills";
 
 /* ----------------------------------- Can ---------------------------------- */
 import LaptopIcon from "./Laptop";
 import MobileIcon from "./Mobile";
 
-export { EnvelopeIcon, HomeIcon, LaptopIcon, MobileIcon, PersonIcon, Portfolio };
+export { EnvelopeIcon, HomeIcon, LaptopIcon, MobileIcon, PersonIcon, Portfolio, Skills };

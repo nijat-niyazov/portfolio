@@ -1,12 +1,13 @@
-import { About, Home, Projects, Resume } from "@/containers";
+import { About, Home, Projects, Resume, Skills } from "@/containers";
 
 export default function HomePage() {
   return (
-    <div className=" grow">
+    <div>
       <Home />
-
       <About />
       <Resume />
+
+      <Skills />
       <Projects />
     </div>
   );

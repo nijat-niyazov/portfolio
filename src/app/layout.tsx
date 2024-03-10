@@ -18,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <main className="flex relative">
-          <div className="hidden md:block">
+        <div className="flex relative">
+          <aside className="hidden md:block">
             <SideBar />
-          </div>
-          <div className="grow">{children}</div>
-        </main>
+          </aside>
+          <main className="grow">{children}</main>
+        </div>
       </body>
     </html>
   );

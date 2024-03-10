@@ -1,7 +1,7 @@
 import { LaptopIcon, MobileIcon } from "@/assets/icons";
 import { mine } from "@/assets/images";
 import { MotionDiv, Section } from "@/components";
-import { Info } from "@/sections/about";
+import { DownloadCv, Info } from "@/sections/about";
 import Image from "next/image";
 
 const About = () => {
@@ -18,23 +18,15 @@ const About = () => {
           initial={{ x: "-120%", opacity: 0 }}
           animate={{ x: "0", opacity: 1 }}
           className="min-w-[340px] h-[340px]"
-          transition={{
-            duration: 1,
-            ease: "linear",
-            type: "spring",
-            // stiffness: 100,
-          }}
+          transition={{ duration: 1, ease: "linear", type: "spring" }}
         >
           <Image src={mine} alt="me" className="w-full h-full object-cover" />
         </MotionDiv>
 
-        {/* <div className="min-w-[340px] h-[400px]">
-        </div> */}
-
-        <div className="grid">
+        <div className="">
           <h2 className="font-bold text-3xl text-primary mb-5 flex items-center text-balance flex-wrap">
-            Web <LaptopIcon className="ml-1 mr-2" /> <span className="hidden md:inline-block">&</span> Mobile Developer{" "}
-            <MobileIcon className="ml-1" />
+            Web <LaptopIcon className="ml-1 mr-2" /> <span className="hidden md:inline-block">&</span> Mobile Developer
+            <MobileIcon className="ml-1" /> <DownloadCv className="ml-auto text-base" />
           </h2>
 
           <p className="italic text-justify mb-5">

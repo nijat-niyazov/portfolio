@@ -2,7 +2,7 @@ import { Footer, MenuNavigation, ProfileInfo, SocialIcons } from "./components";
 
 const SideBar = () => {
   return (
-    <aside className="min-h-screen bg-black text-white p-10 grid sticky top-0 z-50 ">
+    <div className="min-h-screen bg-black text-white p-10 grid sticky top-0 z-50 ">
       <div>
         <ProfileInfo />
 
@@ -11,7 +11,7 @@ const SideBar = () => {
 
       <MenuNavigation />
       <Footer />
-    </aside>
+    </div>
   );
 };
 

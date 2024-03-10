@@ -1,3 +1,4 @@
+import DownloadCv from "./download-cv";
 import Info from "./info";
 
-export { Info };
+export { DownloadCv, Info };

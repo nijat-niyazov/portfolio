@@ -10,7 +10,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <Section className="bg-slate-700 text-white" title="Portfolio">
+    <Section className="bg-slate-700 text-white min-h-screen" title="Portfolio">
       <p>Okay</p>
       <Tabs />
 
