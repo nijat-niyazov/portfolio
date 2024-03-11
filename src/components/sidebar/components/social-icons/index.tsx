@@ -4,7 +4,7 @@ import Link from "next/link";
 const socialIcons = [
   { url: "https://github.com/nijat-niyazov", icon: GithubIcon },
   { url: "https://www.linkedin.com/in/nijatniyazov", icon: LinkedinIcon },
-  { url: "https://www.telegram.com/@nijatniyazovv", icon: TelegramIcon },
+  { url: "https://t.me/nijatniyazovv", icon: TelegramIcon },
   { url: "https://instagram.com/niyazovnijatt", icon: InstragramIcon },
   { url: "https://www.facebook.com/nijatniyazov", icon: FacebookIcon },
 ];
