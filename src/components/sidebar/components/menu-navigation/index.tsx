@@ -1,32 +1,50 @@
-import { EnvelopeIcon, HomeIcon, PersonIcon, Portfolio, Skills } from "@/assets/icons";
+"use client";
+
+import { Briefcase, Cube, HomeIcon, PersonIcon } from "@/assets/icons";
+import { useActiveSectionStore } from "@/stores/";
 import { cn } from "@/utils";
-import Link from "next/link";
 
 const navigation = [
-  { url: "#", icon: HomeIcon, name: "Home" },
-  { url: "#", icon: PersonIcon, name: "About" },
-  { url: "#", icon: HomeIcon, name: "Resume" },
-  { url: "#", icon: Skills, name: "Skills" },
-  { url: "#", icon: Portfolio, name: "Projects" },
-  { url: "#", icon: EnvelopeIcon, name: "Contact" },
+  { icon: HomeIcon, name: "Home" },
+  { icon: PersonIcon, name: "About" },
+  { icon: HomeIcon, name: "Resume" },
+  { icon: Cube, name: "Skills" },
+  { icon: Briefcase, name: "Portfolio" },
+  // { icon: EnvelopeIcon, name: "Contact" },
 ];
 
 function MenuNavigation() {
+  const { activeSection, positions } = useActiveSectionStore((state) => state);
+
+  function goToSection(position: number) {
+    window.scrollTo({ top: position, behavior: "instant" });
+  }
+
   return (
     <nav className="grid gap-3">
-      {navigation.map(({ url, name, icon: Icon }) => {
-        const active = name === "Home";
+      {navigation.map(({ name, icon: Icon }, i) => {
         return (
-          <Link
+          <button
+            onClick={() => goToSection(positions[i])}
             key={name}
-            href={url}
             className={cn("flex items-center gap-4 opacity-60 hover:opacity-100 navigation-link transition-colors duration-200", {
-              "opacity-100 active-link": active,
+              "opacity-100 active-link": i === activeSection,
             })}
           >
             <Icon />
             {name}
-          </Link>
+          </button>
+
+          // <Link
+          //   key={name}
+          //   href={url}
+          //   className={cn("flex items-center gap-4 opacity-60 hover:opacity-100 navigation-link transition-colors duration-200", {
+          //     "opacity-100 active-link": active,
+          //   })}
+          // >
+          //   <Icon />
+          //   {name}
+          // </Link>
         );
       })}
     </nav>

@@ -7,7 +7,7 @@ type TitleProps = {
 const Title = ({ title, className, ...rest }: TitleProps) => {
   return (
     <h1
-      className={`text-primary after:content-[''] after:block after:w-20 after:mt-5 after:h-1 after:bg-primary font-semibold text-3xl mb-10 ${className}`}
+      className={`text-primary after:content-[''] after:block after:w-16 after:mt-3 after:h-1 after:bg-primary font-semibold text-3xl mb-10 ${className}`}
       {...rest}
     >
       {title}

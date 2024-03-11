@@ -7,14 +7,14 @@ import TelegramIcon from "./socal-icons/telegram";
 export { FacebookIcon, GithubIcon, InstragramIcon, LinkedinIcon, TelegramIcon };
 
 /* ---------------------------- Navigation Icons ---------------------------- */
+import Briefcase from "./Briefcase";
+import Cube from "./Cube";
 import EnvelopeIcon from "./Envelope";
 import HomeIcon from "./HomeIcon";
 import PersonIcon from "./Person";
-import Portfolio from "./Portfolio";
-import Skills from "./Skills";
 
 /* ----------------------------------- Can ---------------------------------- */
 import LaptopIcon from "./Laptop";
 import MobileIcon from "./Mobile";
 
-export { EnvelopeIcon, HomeIcon, LaptopIcon, MobileIcon, PersonIcon, Portfolio, Skills };
+export { Briefcase, Cube, EnvelopeIcon, HomeIcon, LaptopIcon, MobileIcon, PersonIcon };
