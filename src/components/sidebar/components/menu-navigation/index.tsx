@@ -27,7 +27,7 @@ function MenuNavigation() {
           <button
             onClick={() => goToSection(positions[i])}
             key={name}
-            className={cn("flex items-center gap-4 opacity-60 hover:opacity-100 navigation-link transition-colors duration-200", {
+            className={cn("flex items-center gap-4 opacity-60 hover:opacity-100 navigation-link transition-all duration-500", {
               "opacity-100 active-link": i === activeSection,
             })}
           >

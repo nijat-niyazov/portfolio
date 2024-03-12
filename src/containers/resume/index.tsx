@@ -33,7 +33,7 @@ const resume = [
     id: 3,
     jobTitle: "Frontend & Nextjs Developer",
     date: ["August 2023"],
-    location: " ,USA",
+    location: "Wilmington, USA",
     projectName: "WISHX",
     type: "Remote",
     contributions: [

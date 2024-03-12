@@ -13,7 +13,7 @@ const About = () => {
         and continuous learning are crucial because my insatiable curiosity drives me to explore new areas of programming.
       </p>
 
-      <div className="flex flex-col md:flex-row items-start gap-5 mb-14">
+      <div className="flex flex-col md:flex-row items-start gap-5 ">
         <MotionDiv
           initial={{ x: "-120%", opacity: 0 }}
           animate={{ x: "0", opacity: 1 }}
@@ -24,10 +24,16 @@ const About = () => {
         </MotionDiv>
 
         <div className="">
-          <h2 className="font-bold text-3xl text-primary mb-5 flex items-center text-balance flex-wrap">
-            Web <LaptopIcon className="ml-1 mr-2" /> <span className="hidden md:inline-block">&</span> Mobile Developer
-            <MobileIcon className="ml-1" /> <DownloadCv className="ml-auto text-base" />
-          </h2>
+          <p className="font-bold text-3xl text-primary mb-5 text-balance flex-wrap md:flex items-center">
+            <span className="flex items-center ">
+              Web <LaptopIcon className="ml-1" />
+            </span>
+            <span className="hidden md:inline-block md:mx-3">&</span>
+            <span className="flex items-center ">
+              Mobile Developer <MobileIcon className="ml-1" />
+            </span>
+            <DownloadCv className="ml-auto text-base" />
+          </p>
 
           <p className="italic text-justify mb-5">
             I have experience building user interfaces and optimizing user experiences. With a solid foundation in JavaScript and TypeScript

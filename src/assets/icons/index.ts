@@ -14,7 +14,9 @@ import HomeIcon from "./HomeIcon";
 import PersonIcon from "./Person";
 
 /* ----------------------------------- Can ---------------------------------- */
+import ChevronRight from "./ChevronRight";
 import LaptopIcon from "./Laptop";
+import Lock from "./Lock";
 import MobileIcon from "./Mobile";
 
-export { Briefcase, Cube, EnvelopeIcon, HomeIcon, LaptopIcon, MobileIcon, PersonIcon };
+export { Briefcase, ChevronRight, Cube, EnvelopeIcon, HomeIcon, LaptopIcon, Lock, MobileIcon, PersonIcon };

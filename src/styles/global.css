@@ -9,10 +9,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 @layer base {
   html {
     --primary: 255, 189, 57;
@@ -41,13 +37,13 @@ html {
 }
 
 /* ------------------------------- Scroll Bar ------------------------------- */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 6px;
   height: 0px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: rgba(var(--primary));
 }
 
 ::-webkit-scrollbar-thumb {
@@ -57,4 +53,4 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-} */
+}

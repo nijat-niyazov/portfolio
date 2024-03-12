@@ -1,9 +1,11 @@
+import { wis } from "@/assets/images";
 import { Section } from "@/components";
 import { Tabs } from "@/components/ui/tabs";
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
-  { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
+  { img: wis, name: "Wishx", url: "#" },
   { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
   { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
 ];
@@ -14,19 +16,19 @@ const Portfolio = () => {
       <p>Okay</p>
       <Tabs />
 
-      <ul className="grid grid-cols-3 gap-5">
+      <ul className="grid md:grid-cols-2 gap-5">
         {projects.map((project, i) => {
           return (
             <li key={i}>
-              {
+              <Link href={`/${project.name.toLowerCase()}`}>
                 <Image
                   src={project.img}
                   alt={`${project.name}-img`}
                   width={340}
                   height={250}
-                  className="w-[340px] h-[250px] hover:brightness-75 transition-all duration-200"
+                  className="w-[340px] h-[250px] hover:brightness-75 transition-all duration-200 object-cover"
                 />
-              }
+              </Link>
             </li>
           );
         })}
