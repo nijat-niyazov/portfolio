@@ -4,7 +4,11 @@ import Link from "next/link";
 const socialIcons = [
   { url: "https://github.com/nijat-niyazov", icon: GithubIcon },
   { url: "https://www.linkedin.com/in/nijatniyazov", icon: LinkedinIcon },
+<<<<<<< HEAD
   { url: "https://www.t.me/nijatniyazovv", icon: TelegramIcon },
+=======
+  { url: "https://t.me/nijatniyazovv", icon: TelegramIcon },
+>>>>>>> 75aee7f733ba10fe6d79b98405196db50b75758a
   { url: "https://instagram.com/niyazovnijatt", icon: InstragramIcon },
   { url: "https://www.facebook.com/nijatniyazov", icon: FacebookIcon },
 ];
