@@ -1,6 +1,6 @@
 import { LaptopIcon, MobileIcon } from "@/assets/icons";
 import { mine } from "@/assets/images";
-import { MotionDiv, Section } from "@/components";
+import { Section } from "@/components";
 import { DownloadCv, Info } from "@/sections/about";
 import Image from "next/image";
 
@@ -14,14 +14,14 @@ const About = () => {
       </p>
 
       <div className="flex flex-col md:flex-row items-start gap-5 ">
-        <MotionDiv
-          initial={{ x: "-120%", opacity: 0 }}
-          animate={{ x: "0", opacity: 1 }}
+        <div
+          // initial={{ x: "-120%", opacity: 0 }}
+          // animate={{ x: "0", opacity: 1 }}
+          // transition={{ duration: 1, ease: "linear", type: "spring" }}
           className="min-w-[340px] h-[340px]"
-          transition={{ duration: 1, ease: "linear", type: "spring" }}
         >
           <Image src={mine} alt="me" className="w-full h-full object-cover" />
-        </MotionDiv>
+        </div>
 
         <div className="">
           <p className="font-bold text-3xl text-primary mb-5 text-balance flex-wrap md:flex items-center">

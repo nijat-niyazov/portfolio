@@ -1,14 +1,8 @@
-import { wis } from "@/assets/images";
 import { Section } from "@/components";
 import { Tabs } from "@/components/ui/tabs";
+import projects from "@/constant/projects";
 import Image from "next/image";
 import Link from "next/link";
-
-const projects = [
-  { img: wis, name: "Wishx", url: "#" },
-  { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
-  { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
-];
 
 const Portfolio = () => {
   return (

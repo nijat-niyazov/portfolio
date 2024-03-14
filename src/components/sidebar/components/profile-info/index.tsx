@@ -1,10 +1,16 @@
+"use client";
 import { mine } from "@/assets/images";
+import generateMotionComponent from "@/components/motionDiv";
+
 import Image from "next/image";
 import Link from "next/link";
 
+const Mascino = generateMotionComponent("header");
+const MotionH1 = generateMotionComponent("h2");
+
 function ProfileInfo() {
   return (
-    <header className="flex items-center flex-col mb-5">
+    <Mascino initial={{ marginTop: 100, opacity: 0.2 }} animate={{ marginTop: 0, opacity: 1 }} className="flex items-center flex-col mb-5">
       <div className="rounded-full border-8 mb-4 border-primary overflow-hidden group hover:scale-90 transition-all duration-200 cursor-none">
         <Image
           src={mine}
@@ -15,11 +21,13 @@ function ProfileInfo() {
         />
       </div>
 
-      <h1 className="font-bold text-2xl">Nijat Niyazov</h1>
+      <MotionH1 initial={{ fontSize: "30px", x: 50, y: -50 }} animate={{ fontSize: "40px", x: 0, y: 0 }} className="font-bold ">
+        Nijat Niyazov
+      </MotionH1>
       <Link href="mailto:nijatniyazov56@gmail.com" target="_blank" className="italic opacity-80">
         nijatniyazov56@gmail.com
       </Link>
-    </header>
+    </Mascino>
   );
 }
 

@@ -1,7 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ElementType } from "react";
 
-const MotionDiv = motion.div;
+const generateMotionComponent = (componentName: ElementType) => {
+  return motion(componentName);
+};
 
-export default MotionDiv;
+export default generateMotionComponent;
