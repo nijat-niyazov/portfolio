@@ -34,7 +34,7 @@
 }
 
 .menu {
-  clip-path: circle(4% at 16% 5%);
+  clip-path: circle(3.7% at 16% 5%);
 }
 
 .menu.expanded {

@@ -19,14 +19,14 @@ const Portfolio = () => {
       <ul className="grid md:grid-cols-2 gap-5">
         {projects.map((project, i) => {
           return (
-            <li key={i}>
+            <li key={i} className="border-2 border-black">
               <Link href={`/${project.name.toLowerCase()}`}>
                 <Image
                   src={project.img}
                   alt={`${project.name}-img`}
                   width={340}
                   height={250}
-                  className="w-[340px] h-[250px] hover:brightness-75 transition-all duration-200 object-cover"
+                  className="w-full h-[250px] hover:brightness-75 transition-all duration-200 object-cover"
                 />
               </Link>
             </li>
