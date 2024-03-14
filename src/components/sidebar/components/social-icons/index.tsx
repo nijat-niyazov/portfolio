@@ -11,7 +11,7 @@ const socialIcons = [
 
 const SocialIcons = () => {
   return (
-    <div className="flex items-center gap-3  justify-center w-full">
+    <div className="flex items-center md:gap-3  justify-evenly md:justify-center w-full">
       {socialIcons.map(({ url, icon: Icon }) => (
         <Link
           key={url}

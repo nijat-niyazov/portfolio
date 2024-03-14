@@ -9,6 +9,38 @@
 @tailwind components;
 @tailwind utilities;
 
+.inner {
+  clip-path: circle(10% at 0% 0%);
+  /* size, left, top */
+  transition: all 0.5s ease-in-out;
+}
+.main:hover .inner {
+  clip-path: circle(75%);
+  background-color: #fc8a06;
+}
+
+.minner {
+  clip-path: circle(5%);
+  background-color: #fc8a06;
+}
+
+.inners {
+  clip-path: inset(50% 50% 50% 50%);
+
+  transition: all 0.5s ease-in-out;
+}
+.maino:hover .inners {
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+.menu {
+  clip-path: circle(4% at 16% 5%);
+}
+
+.menu.expanded {
+  clip-path: circle(150%);
+}
+
 @layer base {
   html {
     --primary: 255, 189, 57;

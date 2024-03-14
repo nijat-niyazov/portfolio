@@ -11,7 +11,7 @@ function ProfileInfo() {
           alt="Logo"
           width={200}
           height={200}
-          className="group-hover:scale-150 w-[200px] h-[200px] transition-all duration-200 object-cover"
+          className="md:group-hover:scale-150 w-[150px] h-[150px] md:w-[200px]md:h-[200px] transition-all duration-200 object-cover"
         />
       </div>
 
