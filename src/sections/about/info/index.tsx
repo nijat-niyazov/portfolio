@@ -1,5 +1,5 @@
 import { ChevronRight } from "@/assets/icons";
-import personalInfo from "@/constant/personalInfo";
+import personalInfo from "@/content/personalInfo";
 
 const Info = () => {
   return (

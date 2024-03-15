@@ -1,5 +1,5 @@
 import { Section } from "@/components";
-import workexperience from "@/constant/workexperience";
+import workexperience from "@/content/workexperience";
 import { ProfessionalExperience } from "@/sections/resume";
 
 const Resume = () => {
