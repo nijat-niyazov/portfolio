@@ -1,5 +1,5 @@
 import { FacebookIcon, GithubIcon, InstragramIcon, LinkedinIcon, TelegramIcon } from "@/assets/icons";
-import Link from "next/link";
+import { MotionLink } from "@/components/motionGenerator";
 
 const socialIcons = [
   { url: "https://github.com/nijat-niyazov", icon: GithubIcon },
@@ -12,15 +12,23 @@ const socialIcons = [
 const SocialIcons = () => {
   return (
     <div className="flex items-center md:gap-3  justify-evenly md:justify-center w-full">
-      {socialIcons.map(({ url, icon: Icon }) => (
-        <Link
+      {socialIcons.map(({ url, icon: Icon }, i) => (
+        <MotionLink
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 120,
+            duration: 0.5,
+            delay: i * 0.1,
+          }}
           key={url}
           target="_blank"
           href={url}
-          className="p-3 bg-slate-800 hover:bg-primary transition-colors duration-100 ease-in text-white rounded-full social-link"
+          className="p-3 bg-slate-800 hover:bg-primary text-white rounded-full social-link"
         >
           <Icon />
-        </Link>
+        </MotionLink>
       ))}
     </div>
   );

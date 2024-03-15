@@ -1,8 +1,8 @@
 import { LaptopIcon, MobileIcon } from "@/assets/icons";
 import { mine } from "@/assets/images";
 import { Section } from "@/components";
+import { MotionImage } from "@/components/motionGenerator";
 import { DownloadCv, Info } from "@/sections/about";
-import Image from "next/image";
 
 const About = () => {
   return (
@@ -20,7 +20,14 @@ const About = () => {
           // transition={{ duration: 1, ease: "linear", type: "spring" }}
           className="min-w-[340px] h-[340px]"
         >
-          <Image src={mine} alt="me" className="w-full h-full object-cover" />
+          <MotionImage
+            initial={{ x: "-120%", opacity: 0 }}
+            animate={{ x: "0", opacity: 1 }}
+            transition={{ duration: 0.5, stiffness: 300, type: "tween" }}
+            src={mine}
+            alt="me"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div className="">

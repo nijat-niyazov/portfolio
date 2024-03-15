@@ -4,6 +4,7 @@ import Providers from "@/provider";
 export default function HomePage() {
   return (
     <Providers>
+      {/* <Zoom /> */}
       <Home />
       <About />
       <Resume />

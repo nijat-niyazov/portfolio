@@ -1,11 +1,19 @@
 import { ChevronRight } from "@/assets/icons";
+import { MotionLi } from "@/components/motionGenerator";
 import personalInfo from "@/content/personalInfo";
 
 const Info = () => {
   return (
     <ul className="grid gap-3 md:grid-cols-2 mb-5">
       {personalInfo.map(({ category, text }, i) => (
-        <li key={i} className="flex  items-center group">
+        <MotionLi
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", stiffness: 260, damping: 20, delay: i * 0.1 }}
+          key={i}
+          className="flex  items-center group"
+        >
           <ChevronRight /> {category}:
           <span
             className="relative ml-2
@@ -19,7 +27,7 @@ const Info = () => {
           >
             {text}
           </span>
-        </li>
+        </MotionLi>
       ))}
     </ul>
   );
