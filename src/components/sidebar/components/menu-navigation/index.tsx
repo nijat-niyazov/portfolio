@@ -1,17 +1,8 @@
 "use client";
 
-import { Briefcase, Cube, HomeIcon, PersonIcon } from "@/assets/icons";
+import { navigation } from "@/contents/sidebar";
 import { useActiveSectionStore } from "@/stores/";
 import { cn } from "@/utils";
-
-const navigation = [
-  { icon: HomeIcon, name: "Home" },
-  { icon: PersonIcon, name: "About" },
-  { icon: HomeIcon, name: "Resume" },
-  { icon: Cube, name: "Skills" },
-  { icon: Briefcase, name: "Portfolio" },
-  // { icon: EnvelopeIcon, name: "Contact" },
-];
 
 type Props = { handleOnNavigation?: () => void };
 

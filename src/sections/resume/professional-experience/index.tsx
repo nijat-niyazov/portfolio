@@ -1,27 +1,14 @@
 import { Title } from "@/components";
+import { Experience } from "@/contents/resume";
 import { Fragment } from "react";
 
-type Job = {
-  id: number;
-  jobTitle: string;
-  date: string[];
-  location: string;
-  projectName: string;
-  type: string;
-  contributions: string[];
-};
-
-type Props = {
-  resume: Job[];
-};
-
-const ProfessionalExperience = ({ resume }: Props) => {
+const ProfessionalExperience = ({ resume }: { resume: Experience[] }) => {
   return (
     <Fragment>
       <Title title="Professional Experience" className="mt-14 after:hidden text-2xl" />
 
       <ul className="grid md:grid-cols-2 items-start">
-        {resume.reverse().map((job, i) => (
+        {resume.map((job, i) => (
           <li
             key={job.id}
             style={{ paddingBottom: i !== resume.length - 1 ? "40px" : 0 }}

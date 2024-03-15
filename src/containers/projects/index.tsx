@@ -1,14 +1,8 @@
-import { wis } from "@/assets/images";
 import { Section } from "@/components";
 import { Tabs } from "@/components/ui/tabs";
+import { projects } from "@/contents/projects";
 import Image from "next/image";
 import Link from "next/link";
-
-const projects = [
-  { img: wis, name: "Wishx", url: "#" },
-  { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
-  { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
-];
 
 const Portfolio = () => {
   return (
@@ -17,9 +11,9 @@ const Portfolio = () => {
       <Tabs />
 
       <ul className="grid md:grid-cols-2 gap-5">
-        {projects.map((project, i) => {
+        {projects.map((project) => {
           return (
-            <li key={i} className="border-2 border-black">
+            <li key={project.img.toString().toLowerCase()} className="border-2 border-black">
               <Link href={`/${project.name.toLowerCase()}`}>
                 <Image
                   src={project.img}
