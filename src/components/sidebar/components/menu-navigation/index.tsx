@@ -4,6 +4,8 @@ import { navigation } from "@/contents/sidebar";
 import { useActiveSectionStore } from "@/stores/";
 import { cn } from "@/utils";
 
+import { MotionButton } from "@/components/motionGenerator";
+
 type Props = { handleOnNavigation?: () => void };
 
 function MenuNavigation({ handleOnNavigation }: Props) {
@@ -11,7 +13,6 @@ function MenuNavigation({ handleOnNavigation }: Props) {
 
   function goToSection(position: number) {
     if (handleOnNavigation) handleOnNavigation();
-
     window.scrollTo({ top: position, behavior: !handleOnNavigation ? "instant" : "smooth" });
   }
 
@@ -19,17 +20,20 @@ function MenuNavigation({ handleOnNavigation }: Props) {
     <nav className="grid gap-3 pl-5 md:p-0">
       {navigation.map(({ name, icon: Icon }, i) => {
         return (
-          <button
+          <MotionButton
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ scale: i === activeSection ? 1.25 : 1, originX: 0, opacity: i === activeSection ? 1 : 0.6, y: 0 }}
+            whileHover={{ opacity: 1, scale: 1.5, originX: 0, transition: { duration: 0.3 } }}
+            transition={{ duration: 0.5, delay: i * 0.05 }}
             onClick={() => goToSection(positions[i])}
             key={name}
-            className={cn(
-              "flex items-center gap-4 md:hover:gap-2 opacity-60 md:hover:opacity-100 navigation-link transition-all duration-500 md:hover:scale-125 md:hover:pl-6",
-              { "opacity-100 active-link scale-125 pl-6 gap-2": i === activeSection }
-            )}
+            className={cn("flex items-center gap-4   navigation-link  opacity-60 ", {
+              "active-link [text-shadow:_0_0_4px_rgb(255_255_255_/_100%)] ": i === activeSection,
+            })}
           >
             <Icon />
             {name}
-          </button>
+          </MotionButton>
         );
       })}
     </nav>

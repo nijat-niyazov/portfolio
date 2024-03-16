@@ -1,3 +1,4 @@
+import { MotionDiv, MotionH1 } from "@/components/motionGenerator";
 import { sideBarEmail, sideBarImage } from "@/contents/sidebar";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,13 @@ import Link from "next/link";
 function ProfileInfo() {
   return (
     <header className="flex items-center flex-col mb-5">
-      <div className="rounded-full border-8 mb-4 border-primary overflow-hidden group hover:scale-90 transition-all duration-200 cursor-none">
+      <MotionDiv
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ type: "spring", stiffness: 60, duration: 0.5 }}
+        className="rounded-full border-8 mb-4 border-primary overflow-hidden group hover:scale-90 cursor-none drop-shadow-lg-primary"
+      >
         <Image
           src={sideBarImage}
           alt="Logo"
@@ -13,9 +20,17 @@ function ProfileInfo() {
           height={200}
           className="md:group-hover:scale-150 w-[150px] h-[150px] md:w-[200px]md:h-[200px] transition-all duration-200 object-cover"
         />
-      </div>
+      </MotionDiv>
 
-      <h1 className="font-bold text-2xl">Nijat Niyazov</h1>
+      <MotionH1
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 60 }}
+        className="font-bold text-3xl"
+      >
+        Nijat Niyazov
+      </MotionH1>
+
       <Link href={`mailto:${sideBarEmail}`} target="_blank" className="italic opacity-80">
         {sideBarEmail}
       </Link>

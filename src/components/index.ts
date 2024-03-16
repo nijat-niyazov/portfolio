@@ -1,7 +1,8 @@
 import CustomButton from "./button";
-import MotionDiv from "./motionDiv";
+import MobileSidebar from "./mobilesidebar";
+
 import Section from "./section";
 import SideBar from "./sidebar";
 import Title from "./title";
 
-export { CustomButton, MotionDiv, Section, SideBar, Title };
+export { CustomButton, MobileSidebar, Section, SideBar, Title };

@@ -1,6 +1,7 @@
 import { Section } from "@/components";
 import { Tabs } from "@/components/ui/tabs";
 import { projects } from "@/contents/projects";
+
 import Image from "next/image";
 import Link from "next/link";
 
