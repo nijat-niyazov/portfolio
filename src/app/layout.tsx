@@ -15,14 +15,7 @@ export const metadata: Metadata = {
     description: "Front end developer ",
     type: "website",
     url: "https://nijat.dev",
-    images: [
-      {
-        url: "../assets/images/mine.png",
-        width: 1200,
-        height: 630,
-        alt: "Nijat Niyazov - Portfolio",
-      },
-    ],
+    images: ["../assets/images/mine.png"],
   },
 };
 
