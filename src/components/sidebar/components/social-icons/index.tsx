@@ -3,7 +3,7 @@ import { socialIcons } from "@/contents/sidebar";
 
 const SocialIcons = () => {
   return (
-    <div className="flex items-center md:gap-3  justify-evenly md:justify-center w-full mb-5">
+    <div className="flex items-center md:gap-3  justify-evenly md:justify-center w-full ">
       {socialIcons.map(({ url, icon: Icon }, i) => (
         <MotionLink
           initial={{ x: -50, opacity: 0 }}

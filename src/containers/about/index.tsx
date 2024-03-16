@@ -28,10 +28,7 @@ const About = () => {
           <MotionImage
             initial={{ x: "-50%", opacity: 0 }}
             whileInView={{ x: "0", opacity: 1 }}
-            viewport={{
-              margin: "300px 0px 0px 0px",
-              once: true,
-            }}
+            viewport={{ margin: "300px 0px 0px 0px", once: true }}
             transition={{ duration: 0.8, type: "just" }}
             src={aboutImage}
             alt="me"
