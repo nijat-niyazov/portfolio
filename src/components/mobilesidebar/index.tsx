@@ -1,8 +1,8 @@
 "use client";
 
 import { SideBar } from "@/components";
-import { cn } from "@/utils";
 import { useState } from "react";
+import { MotionDiv } from "../motionGenerator";
 import Backdrop from "./backdrop";
 import ToggleButton from "./toggle-btn";
 
@@ -31,6 +31,17 @@ import ToggleButton from "./toggle-btn";
 
 // export default MobileSidebar;
 
+// const circleStyle = { clipPath: "circle(0% at 16% 5%)" };
+// const off = { clipPath: "circle(150% at 16% 5%)" };
+const variants = {
+  starter: {
+    clipPath: "circle(30% at 16% 5%)",
+  },
+  end: {
+    clipPath: "circle(150% at 16% 5%)",
+  },
+};
+
 const MobileSidebar = () => {
   const [isOpened, setIsOpened] = useState(false);
 
@@ -41,11 +52,14 @@ const MobileSidebar = () => {
       <Backdrop handleToggle={handleToggle} isOpened={isOpened} />
 
       <ToggleButton handleToggle={handleToggle} isOpened={isOpened} />
-      <div className={cn("w-9/12 absolute inset-0 h-screen transition-all ease-in-out duration-500 menu", { expanded: isOpened })}>
+
+      <MotionDiv variants={variants} initial="starter" whileTap="end" className={"w-9/12 absolute inset-0 h-screen "}>
+        {/* className={cn("w-9/12 absolute inset-0 h-screen ", { expanded: isOpened })}> */}
+        {/* transition-all ease-in-out duration-500 menu */}
         <div className="bg-primary h-screen  pt-20">
           <SideBar handleOnNavigation={handleToggle} />
         </div>
-      </div>
+      </MotionDiv>
     </div>
   );
 };
