@@ -4,7 +4,7 @@ import { Stacks } from "@/sections/skills";
 const Skills = () => {
   return (
     <Section id="skills" title="Skills" className="min-h-screen bg-gray-600">
-      <Stacks className="mb-10 md:block hidden" />
+      <Stacks className="mb-10" />
 
       <Title animated={false} title="Soft" className="text-2xl" />
 

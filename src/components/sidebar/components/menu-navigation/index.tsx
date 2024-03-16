@@ -17,7 +17,7 @@ function MenuNavigation({ handleOnNavigation }: Props) {
   }
 
   return (
-    <nav className="grid gap-3 pl-5 md:p-0">
+    <nav className="grid gap-3 px-4 md:px-2">
       {navigation.map(({ name, icon: Icon }, i) => {
         return (
           <MotionButton

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="mt-20 text-primary flex items-center justify-between">
+    <footer className="mt-20 px-4 md:px-2 text-primary flex items-center justify-between">
       <span>&#169; Copyright</span> <span>{new Date().getFullYear()}</span>
     </footer>
   );

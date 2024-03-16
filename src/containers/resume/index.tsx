@@ -11,7 +11,7 @@ const Resume = () => {
         {resumeInfo}
         {/* <span className="block my-4">Started at: {differenceInMonths(new Date(2014, 12, 4), new Date(2014, 8, 3))}</span> */}
         <span className="block my-4">
-          Started at: {(format(new Date(2014, 1, 11), "LLLL y"), differenceInMonths(new Date(), new Date(2023, 2, 11)))}months
+          Started at: {format(new Date(2014, 1, 11), "LLLL y")}, {differenceInMonths(new Date(), new Date(2023, 2, 11))} months
         </span>
       </p>
 
