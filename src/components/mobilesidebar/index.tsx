@@ -17,7 +17,7 @@ const MobileSidebar = () => {
 
       <ToggleButton handleToggle={handleToggle} isOpened={isOpened} />
       <div
-        className={cn("w-9/12 absolute inset-0 h-screen transition-all ease-out duration-500 -translate-x-full", {
+        className={cn("w-9/12 absolute inset-0 h-screen transition-all ease-in-out duration-500 -translate-x-full", {
           "translate-x-0": isOpened,
         })}
       >
