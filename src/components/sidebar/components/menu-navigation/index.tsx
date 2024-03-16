@@ -24,7 +24,7 @@ function MenuNavigation({ handleOnNavigation }: Props) {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ scale: i === activeSection ? 1.25 : 1, originX: 0, opacity: i === activeSection ? 1 : 0.6, y: 0 }}
             whileHover={{ opacity: 1, scale: 1.5, originX: 0, transition: { duration: 0.3 } }}
-            transition={{ duration: 0.5, delay: i * 0.05 }}
+            transition={{ duration: 0.5, delay: i * 5 }}
             onClick={() => goToSection(positions[i])}
             key={name}
             className={cn("flex items-center gap-4   navigation-link  opacity-60 ", {
