@@ -12,7 +12,7 @@ const ToggleButton = ({ handleToggle, isOpened }: Props) => {
       className="bg-primary w-12 h-12 rounded-full top-[5%] -translate-y-1/2 absolute left-[12%] -translate-x-1/2 flex items-center justify-center flex-col z-20"
     >
       {/* ------------------------------ Arrow version ----------------------------- */}
-      <span
+      {/* <span
         className={cn("w-5 h-0.5 transition-all duration-500 ease-out rounded-full bg-black my-0.5", {
           "-rotate-45 w-1/4 -translate-x-1/2   translate-y-[100%]": isOpened,
         })}
@@ -26,11 +26,11 @@ const ToggleButton = ({ handleToggle, isOpened }: Props) => {
         className={cn("w-5 h-0.5 transition-all duration-500 ease-out rounded-full bg-black my-0.5", {
           "rotate-45 w-1/4   -translate-x-1/2 -translate-y-[100%]": isOpened,
         })}
-      />
+      /> */}
 
       {/* ----------------------------- Cancel Version ----------------------------- */}
 
-      {/* <span
+      <span
         className={cn("w-5 h-0.5 transition-all duration-500 ease-out rounded-full bg-black my-0.5 ", {
           "-rotate-45 translate-y-1.5": isOpened,
         })}
@@ -40,7 +40,7 @@ const ToggleButton = ({ handleToggle, isOpened }: Props) => {
         className={cn("w-5 h-0.5 transition-all duration-500 ease-out rounded-full bg-black my-0.5 ", {
           "rotate-45 -translate-y-1.5": isOpened,
         })}
-      /> */}
+      />
     </button>
   );
 };

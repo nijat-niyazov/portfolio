@@ -38,7 +38,7 @@
   -webkit-clip-path: inset(0% 0% 0% 0%);
 }
 
-/* .menu {
+.menu {
   clip-path: circle(0% at 16% 5%);
   -webkit-clip-path: circle(0% at 16% 5%);
 }
@@ -46,7 +46,7 @@
 .menu.expanded {
   clip-path: circle(150%);
   -webkit-clip-path: circle(150%);
-} */
+}
 
 @layer base {
   html {
