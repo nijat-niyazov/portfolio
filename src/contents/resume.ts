@@ -5,7 +5,7 @@ export const professionalExperience = [
   {
     id: 1,
     jobTitle: "Frontend & Nextjs Developer",
-    date: ["August 2023"],
+    date: ["2023, 8"],
     location: "Wilmington, USA",
     projectName: "WISHX",
     type: "Remote",
@@ -19,7 +19,7 @@ export const professionalExperience = [
   {
     id: 2,
     jobTitle: "Frontend Developer",
-    date: ["December 2023", "December 2023"],
+    date: ["2023, 11", "2023, 12"],
     location: "Baku, Azerbaijan",
     projectName: "Qmeter",
     type: "Freelance",
@@ -32,7 +32,7 @@ export const professionalExperience = [
   {
     id: 3,
     jobTitle: "Intern Frontend Developer",
-    date: ["June 2023", "August 2023"],
+    date: ["2023, 6", "2023, 8"],
     location: "Dubai, United Arab Emirates ",
     projectName: "Qmeter",
     type: "Hybrid",
