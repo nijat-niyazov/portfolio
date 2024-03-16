@@ -1,6 +1,7 @@
 "use client";
 
 import { SideBar } from "@/components";
+import { Variants } from "framer-motion";
 import { useState } from "react";
 import { MotionDiv } from "../motionGenerator";
 import Backdrop from "./backdrop";
@@ -33,12 +34,20 @@ import ToggleButton from "./toggle-btn";
 
 // const circleStyle = { clipPath: "circle(0% at 16% 5%)" };
 // const off = { clipPath: "circle(150% at 16% 5%)" };
-const variants = {
+const variants: Variants = {
   starter: {
-    clipPath: "circle(30% at 16% 5%)",
+    clipPath: "circle(10% at 16% 5%)",
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 10,
+      delayChildren: 20,
+    },
   },
   end: {
     clipPath: "circle(150% at 16% 5%)",
+    transition: {
+      when: "afterChildren",
+    },
   },
 };
 
