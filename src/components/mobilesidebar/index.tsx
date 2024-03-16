@@ -15,9 +15,12 @@ const MobileSidebar = () => {
     <div className="fixed w-full h-screen md:hidden z-50">
       <Backdrop handleToggle={handleToggle} isOpened={isOpened} />
 
-      <div className={cn("w-9/12 absolute inset-0 h-screen transition-all ease-in-out duration-500", { expanded: isOpened })}>
-        <ToggleButton handleToggle={handleToggle} isOpened={isOpened} />
-
+      <ToggleButton handleToggle={handleToggle} isOpened={isOpened} />
+      <div
+        className={cn("w-9/12 absolute inset-0 h-screen transition-all ease-in-out duration-500 -translate-x-full", {
+          "translate-x-0": isOpened,
+        })}
+      >
         <div className="bg-primary h-screen  pt-20">
           <SideBar handleOnNavigation={handleToggle} />
         </div>
