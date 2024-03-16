@@ -14,16 +14,12 @@ const About = () => {
       </p>
 
       <div className="flex flex-col md:flex-row items-start gap-5 ">
-        <div
-          // initial={{ x: "-120%", opacity: 0 }}
-          // animate={{ x: "0", opacity: 1 }}
-          // transition={{ duration: 1, ease: "linear", type: "spring" }}
-          className="min-w-[340px] h-[340px]"
-        >
+        <div className="min-w-[340px] h-[340px]">
           <MotionImage
-            initial={{ x: "-120%", opacity: 0 }}
-            animate={{ x: "0", opacity: 1 }}
-            transition={{ duration: 0.5, stiffness: 300, type: "tween" }}
+            initial={{ x: "-50%", opacity: 0 }}
+            whileInView={{ x: "0", opacity: 1 }}
+            viewport={{ margin: "300px 0px 0px 0px" }}
+            transition={{ duration: 0.8, type: "just" }}
             src={mine}
             alt="me"
             className="w-full h-full object-cover"

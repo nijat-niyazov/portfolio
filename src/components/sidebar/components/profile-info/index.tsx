@@ -1,12 +1,8 @@
-"use client";
 import { mine } from "@/assets/images";
 import { MotionDiv, MotionH1 } from "@/components/motionGenerator";
 import Image from "next/image";
 
 import Link from "next/link";
-
-// const Mascino = generateMotionComponent("header");
-// const MotionH1 = motion.h2;
 
 function ProfileInfo() {
   return (

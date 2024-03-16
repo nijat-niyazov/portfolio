@@ -1,4 +1,5 @@
 import { MobileSidebar } from "@/components";
+import { MotionDiv } from "@/components/motionGenerator";
 import { Me } from "@/sections/home";
 
 const Home = () => {
@@ -8,10 +9,19 @@ const Home = () => {
 
       <MobileSidebar />
 
-      <div className=" absolute top-96 md:top-80 left-5 md:left-56 text-white not-italic">
+      <MotionDiv
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+          type: "just",
+          // stiffness: 100,
+        }}
+        className=" absolute top-96 md:top-80 left-5 md:left-56 text-white not-italic"
+      >
         <h1 className="text-4xl md:text-5xl mb-5 font-bold ">Nijat Niyazov</h1>
         <Me />
-      </div>
+      </MotionDiv>
     </section>
   );
 };
