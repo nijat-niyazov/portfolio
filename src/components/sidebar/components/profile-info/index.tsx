@@ -9,9 +9,8 @@ function ProfileInfo() {
       <MotionDiv
         initial={{ scale: 0, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
-        viewport={{ once: true }}
         transition={{ type: "spring", stiffness: 60, duration: 0.5 }}
-        className="rounded-full border-8 mb-4 border-primary overflow-hidden group hover:scale-90 cursor-none drop-shadow-lg-primary"
+        className="rounded-full border-8 my-4 border-primary overflow-hidden group hover:scale-90 cursor-none drop-shadow-lg-primary"
       >
         <Image
           src={sideBarImage}

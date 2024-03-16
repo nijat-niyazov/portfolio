@@ -7,7 +7,7 @@ const Info = () => {
     <ul className="grid gap-3 md:grid-cols-2 mb-5">
       {personalInfo.map(({ category, text }, i) => (
         <MotionLi
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 160, damping: 20, delay: i * 0.1 }}
