@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const MotionDiv = motion.div;
+export const MotionP = motion.p;
 export const MotionLi = motion.li;
 export const MotionUl = motion.ul;
 export const MotionHeader = motion.header;

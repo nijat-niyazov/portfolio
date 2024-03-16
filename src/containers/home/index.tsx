@@ -1,4 +1,3 @@
-import { MobileSidebar } from "@/components";
 import { MotionDiv } from "@/components/motionGenerator";
 import { Me } from "@/sections/home";
 
@@ -6,8 +5,6 @@ const Home = () => {
   return (
     <section id="#home" className="min-h-screen bg-slate-500 relative ">
       <div className="bg-[url('https://img.freepik.com/premium-photo/attractive-guy-shirt-pink-background_185193-72728.jpg')] bg-no-repeat bg-center bg-cover min-h-screen brightness-50 bg-fixed w-full z-0 absolute inset-0" />
-
-      <MobileSidebar />
 
       <MotionDiv
         initial={{ opacity: 0, y: -50 }}

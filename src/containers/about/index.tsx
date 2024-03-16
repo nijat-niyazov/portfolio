@@ -1,24 +1,33 @@
 import { LaptopIcon, MobileIcon } from "@/assets/icons";
 import { mine } from "@/assets/images";
 import { Section } from "@/components";
-import { MotionImage } from "@/components/motionGenerator";
+import { MotionImage, MotionP } from "@/components/motionGenerator";
 import { DownloadCv, Info } from "@/sections/about";
 
 const About = () => {
   return (
     <Section title="About" className="min-h-screen bg-slate-700 text-white selection:bg-primary selection:text-black">
-      <p className="mb-8 text-lg text-justify">
+      <MotionP
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ margin: "150px 0px 0px 0px" }}
+        className="mb-8 text-lg text-justify"
+      >
         I am a solution oriented Frontend Developer. Experienced in web-development and now working on startup as frontend developer. I have
         successfully contributed to global projects and helped them achieve success. I love being in dynamic environments where innovation
         and continuous learning are crucial because my insatiable curiosity drives me to explore new areas of programming.
-      </p>
+      </MotionP>
 
       <div className="flex flex-col md:flex-row items-start gap-5 ">
         <div className="min-w-[340px] h-[340px]">
           <MotionImage
             initial={{ x: "-50%", opacity: 0 }}
             whileInView={{ x: "0", opacity: 1 }}
-            viewport={{ margin: "300px 0px 0px 0px" }}
+            viewport={{
+              margin: "300px 0px 0px 0px",
+              //  once: true
+            }}
             transition={{ duration: 0.8, type: "just" }}
             src={mine}
             alt="me"
@@ -52,8 +61,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      {/* <Title title="Facts" className="mt-14" /> */}
     </Section>
   );
 };

@@ -1,4 +1,4 @@
-import { SideBar } from "@/components";
+import { MobileSidebar, SideBar } from "@/components";
 import "@/styles/global.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -22,6 +22,7 @@ export default function RootLayout({
           <aside className="hidden md:block">
             <SideBar />
           </aside>
+          <MobileSidebar />
           <main className="grow">{children}</main>
         </div>
       </body>

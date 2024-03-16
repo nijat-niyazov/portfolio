@@ -54,6 +54,10 @@
     fill: #000;
   }
 
+  .social-link:hover {
+    filter: drop-shadow(0px 0px 5px rgb(var(--primary)));
+  }
+
   .active-link svg,
   .navigation-link:hover svg {
     stroke: rgba(var(--primary));

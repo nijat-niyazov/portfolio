@@ -9,7 +9,7 @@ const Info = () => {
         <MotionLi
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true }}
+          // viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 260, damping: 20, delay: i * 0.1 }}
           key={i}
           className="flex  items-center group"
