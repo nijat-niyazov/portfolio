@@ -1,6 +1,6 @@
 import { MobileSidebar, SideBar } from "@/components";
 import "@/styles/global.css";
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewPort: Viewport = {
-  initialScale: 1,
-  minimumScale: 1,
-  maximumScale: 1,
-  width: "device-width",
-  height: "device-height",
-  userScalable: false,
-  viewportFit: "cover",
-};
+// export const viewPort: Viewport = {
+//   initialScale: 1,
+//   minimumScale: 1,
+//   maximumScale: 1,
+//   width: "device-width",
+//   height: "device-height",
+//   // userScalable: false,
+//   // viewportFit: "cover",
+// };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
