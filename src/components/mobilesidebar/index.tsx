@@ -19,7 +19,7 @@ const MobileSidebar = () => {
   };
 
   return (
-    <div className="z-50">
+    <div className="z-50 md:hidden">
       <Backdrop handleToggle={handleToggle} isOpened={isOpened} />
 
       <ToggleButton handleToggle={handleToggle} isOpened={isOpened} />
