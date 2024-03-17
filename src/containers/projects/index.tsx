@@ -21,7 +21,7 @@ const Portfolio = () => {
                   alt={`${project.name}-img`}
                   width={340}
                   height={250}
-                  className="w-full h-[250px] hover:brightness-75 transition-all duration-200 object-cover"
+                  className="w-full h-[250px] hover:brightness-75 transition-all duration-200 object-contain"
                 />
               </Link>
             </li>

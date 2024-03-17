@@ -7,6 +7,7 @@ export default function HomePage() {
       {/* <Zoom /> */}
       <Home />
       <About />
+
       <Resume />
 
       <Skills />

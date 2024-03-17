@@ -1,14 +1,12 @@
-import { Section, Title } from "@/components";
-import { Stacks } from "@/sections/skills";
+import { Section } from "@/components";
 
 const Skills = () => {
   return (
-    <Section id="skills" title="Skills" className="min-h-screen bg-gray-600">
-      <Stacks className="mb-10" />
-
-      <Title animated={false} title="Soft" className="text-2xl" />
-
-      <Title animated={false} title="Language" className="text-2xl" />
+    <Section id="skills" title="Skills" className="min-h-[50vh]  bg-gray-600">
+      {/* <Stacks className="mb-10" /> */}
+      <p className="font-bold text-2xl text-white">This page is under construction. Please check back later.</p>
+      {/* <Sec /> */}
+      {/* "" */}
     </Section>
   );
 };

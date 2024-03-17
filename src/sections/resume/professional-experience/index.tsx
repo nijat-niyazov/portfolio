@@ -29,10 +29,11 @@ const ProfessionalExperience = ({ experience }: { experience: Experience[] }) =>
               <h3 className="text-primary font-semibold text-xl leading-none uppercase mb-2">{job.jobTitle}</h3>
 
               <div className="grid gap-2 place-items-start text-base">
-                <span className="px-2 py-1 bg-gray-600">
-                  {format(startDate, "LLLL y")} - {endDate ? format(endDate, "LLLL y") : "Present"} | {totalMonths}
+                <p className="px-2 py-1 bg-gray-600 text-balance">
+                  {format(startDate, "LLLL y")} - {endDate ? format(endDate, "LLLL y") : "Present"} | <br className="md:hidden" />{" "}
+                  {totalMonths}
                   {" month" + (totalMonths > 1 ? "s" : "")}
-                </span>
+                </p>
                 <span className="italic inline-block ">{job.location}</span>
               </div>
 

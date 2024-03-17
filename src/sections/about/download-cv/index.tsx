@@ -2,6 +2,7 @@
 
 import { cn } from "@/utils";
 import downloadFile from "@/utils/helpers/downloadFile";
+import Link from "next/link";
 import { ButtonHTMLAttributes } from "react";
 
 const DownloadCv = ({ className, ...rest }: ButtonHTMLAttributes<HTMLButtonElement>) => {
@@ -10,13 +11,22 @@ const DownloadCv = ({ className, ...rest }: ButtonHTMLAttributes<HTMLButtonEleme
   }
 
   return (
-    <button
-      {...rest}
-      onClick={handleDownloadCv}
+    <Link
       className={cn(`px-4 py-2 bg-primary text-black inline-block my-2 font-semibold ${className}`)}
+      href="/nijat.pdf"
+      download="Nijat's CV"
+      target="_blank"
     >
       Download CV
-    </button>
+    </Link>
+
+    // <button
+    //   {...rest}
+    //   onClick={handleDownloadCv}
+    //   className={cn(`px-4 py-2 bg-primary text-black inline-block my-2 font-semibold ${className}`)}
+    // >
+    //   Download CV
+    // </button>
   );
 };
 
