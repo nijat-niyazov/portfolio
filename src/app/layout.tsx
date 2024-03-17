@@ -1,4 +1,4 @@
-import { MobileSidebar, SideBar } from "@/components";
+import { SideBar } from "@/components";
 import "@/styles/global.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <aside className="hidden md:block">
             <SideBar />
           </aside>
-          <MobileSidebar />
+          {/* <MobileSidebar /> */}
           <main className="grow">{children}</main>
         </div>
       </body>
