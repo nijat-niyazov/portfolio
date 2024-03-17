@@ -7,6 +7,7 @@ import {
   InstragramIcon,
   LinkedinIcon,
   PersonIcon,
+  ResumeIcon,
   TelegramIcon,
 } from "@/assets/icons";
 import { mine } from "@/assets/images";
@@ -25,7 +26,7 @@ export const sideBarEmail = "nijatniyazov56@gmail.com";
 export const navigation = [
   { icon: HomeIcon, name: "Home" },
   { icon: PersonIcon, name: "About" },
-  { icon: HomeIcon, name: "Resume" },
+  { icon: ResumeIcon, name: "Resume" },
   { icon: Cube, name: "Skills" },
   { icon: Briefcase, name: "Portfolio" },
 ];
