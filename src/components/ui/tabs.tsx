@@ -20,7 +20,7 @@ const TabsList = forwardRef<ElementRef<typeof TabsPrimitive.List>, ComponentProp
   )
 );
 
-TabsList.displayName = TabsPrimitive.List.displayName;
+// TabsList.displayName = TabsPrimitive.List.displayName;
 
 const TabsTrigger = forwardRef<ElementRef<typeof TabsPrimitive.Trigger>, ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>>(
   ({ className, ...props }, ref) => (
@@ -34,7 +34,7 @@ const TabsTrigger = forwardRef<ElementRef<typeof TabsPrimitive.Trigger>, Compone
     />
   )
 );
-TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
+// // TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
 
 const TabsContent = forwardRef<ElementRef<typeof TabsPrimitive.Content>, ComponentPropsWithoutRef<typeof TabsPrimitive.Content>>(
   ({ className, ...props }, ref) => (
@@ -48,6 +48,6 @@ const TabsContent = forwardRef<ElementRef<typeof TabsPrimitive.Content>, Compone
     />
   )
 );
-TabsContent.displayName = TabsPrimitive.Content.displayName;
+// // TabsContent.displayName = TabsPrimitive.Content.displayName;
 
 export { Tabs, TabsContent, TabsList, TabsTrigger };

@@ -5,8 +5,6 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const runtime = "edge";
-
 export const metadata: Metadata = {
   title: "Nijat Niyazov - Portfolio",
   description: "Front end developer portfolio website. Nijat Niyazov. React, Next.js, Tailwind CSS, Framer Motion, and more.",

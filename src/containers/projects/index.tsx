@@ -1,33 +1,12 @@
 import { Section } from "@/components";
-import { Tabs } from "@/components/ui/tabs";
-import { projects } from "@/contents/projects";
-
-import Image from "next/image";
-import Link from "next/link";
+import { CategoriesTabs, Projects } from "@/sections/projects";
 
 const Portfolio = () => {
   return (
     <Section id="portfolio" className="bg-slate-700 text-white min-h-screen" title="Portfolio">
-      <p>Okay</p>
-      <Tabs />
+      <CategoriesTabs />
 
-      <ul className="grid md:grid-cols-2 gap-5">
-        {projects.map((project) => {
-          return (
-            <li key={project.img.toString().toLowerCase()} className="border-2 border-black">
-              <Link href={`/${project.name.toLowerCase()}`}>
-                <Image
-                  src={project.img}
-                  alt={`${project.name}-img`}
-                  width={340}
-                  height={250}
-                  className="w-full h-[250px] hover:brightness-75 transition-all duration-200 object-contain"
-                />
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      <Projects />
     </Section>
   );
 };
