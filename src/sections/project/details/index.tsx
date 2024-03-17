@@ -54,7 +54,7 @@ const Details = ({ details: { stacks, category, img, url, repo } }: { details: D
                 <MotionLi
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
-                  whileInView={{
+                  animate={{
                     opacity: 1,
                     y: 0,
                     scale: [1, 2, 3, 2, 1],
