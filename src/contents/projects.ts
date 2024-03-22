@@ -17,4 +17,24 @@ export const projectsWithDetails = {
     },
     about: ["eeeee", "cccc", "dddd"],
   },
+  alac: {
+    title: "Alac.az",
+    details: {
+      stacks: ["Next.js", "Tailwind CSS", "Headless UI"],
+      category: ["Typescript", "NextJS"],
+      img: wis,
+      url: "https://wishx.me",
+    },
+    about: ["eeeee", "cccc", "dddd"],
+  },
+  filtering: {
+    title: "Wishx.me",
+    details: {
+      stacks: ["Next.js 13", "Typescript", "Tailwind CSS", "Zustand", "Stripe", "Pusher JS", " Formik", "Material UI"],
+      category: ["Typescript", "NextJS"],
+      img: wis,
+      url: "https://wishx.me",
+    },
+    about: ["eeeee", "cccc", "dddd"],
+  },
 };
