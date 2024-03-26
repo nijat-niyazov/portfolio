@@ -1,6 +1,7 @@
 import { About, Home, Projects, Resume, Skills } from "@/containers";
 import Providers from "@/provider";
 
+// edit
 export default function HomePage() {
   return (
     <Providers>
