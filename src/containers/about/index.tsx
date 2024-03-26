@@ -7,17 +7,11 @@ import { DownloadCv, Info } from "@/sections/about";
 const About = () => {
   return (
     <Section id="about" title="About" className="bg-slate-700 text-white selection:bg-primary selection:text-black">
-      <p className="mb-8 text-lg text-justify">{whoIAm}</p>
-
       <MotionP
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        viewport={{
-          margin: "150px 0px 0px 0px",
-
-          once: true,
-        }}
+        viewport={{ margin: "150px 0px 0px 0px", once: true }}
         className="mb-8 text-lg text-justify"
       >
         {whoIAm}
@@ -37,16 +31,19 @@ const About = () => {
         </div>
 
         <div className="">
-          <p className="font-bold text-3xl text-primary mb-5 text-balance flex-wrap md:flex items-center">
-            <span className="flex items-center ">
-              Web <LaptopIcon className="ml-1" />
-            </span>
-            <span className="hidden md:inline-block md:mx-3">&</span>
-            <span className="flex items-center ">
-              Mobile Developer <MobileIcon className="ml-1" />
-            </span>
-          </p>
-          <DownloadCv className="ml-auto text-base" />
+          <div className="flex flex-col md:flex-row items-start md:justify-between gap-3 md:items-center mb-5">
+            <p className="font-bold text-3xl text-primary text-balance flex-wrap md:flex items-center">
+              <span className="flex items-center ">
+                Web <LaptopIcon className="ml-1" />
+              </span>
+              <span className="hidden md:inline-block md:mx-3">&</span>
+              <span className="flex items-center ">
+                Mobile Developer <MobileIcon className="ml-1" />
+              </span>
+            </p>
+
+            <DownloadCv className="text-base" />
+          </div>
 
           <p className="italic text-justify mb-5">{aboutExperience}</p>
 
