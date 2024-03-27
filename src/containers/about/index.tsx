@@ -18,17 +18,15 @@ const About = () => {
       </MotionP>
 
       <div className="flex flex-col md:flex-row items-start gap-5 ">
-        <div className="min-w-[340px] h-[340px]">
-          <MotionImage
-            initial={{ x: "-50%", opacity: 0 }}
-            whileInView={{ x: "0", opacity: 1 }}
-            viewport={{ margin: "300px 0px 0px 0px", once: true }}
-            transition={{ duration: 0.8, type: "just" }}
-            src={aboutImage}
-            alt="me"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <MotionImage
+          initial={{ x: "-50%", opacity: 0 }}
+          whileInView={{ x: "0", opacity: 1 }}
+          viewport={{ margin: "300px 0px 0px 0px", once: true }}
+          transition={{ duration: 0.8, type: "just" }}
+          src={aboutImage}
+          alt="me"
+          className="w-full object-cover h-[350px]"
+        />
 
         <div className="">
           <div className="flex flex-col md:flex-row items-start md:justify-between gap-3 md:items-center mb-5">
