@@ -50,6 +50,9 @@
 
 @layer base {
   html {
+    scroll-behavior: smooth;
+  }
+  :root {
     --primary: 255, 189, 57;
     --secondary: 2, 134, 67;
     --text: 3, 8, 31;
