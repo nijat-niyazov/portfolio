@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function ProfileInfo() {
   return (
-    <header className="flex items-center flex-col mb-5">
+    <div className="flex items-center flex-col mb-5">
       <MotionDiv
         initial={{ scale: 0, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
@@ -28,7 +28,7 @@ function ProfileInfo() {
           {sideBarEmail}
         </Link>
       </MotionDiv>
-    </header>
+    </div>
   );
 }
 

@@ -14,7 +14,7 @@ function MenuNavigation({ handleOnNavigation }: Props) {
   const pathname = usePathname();
 
   return (
-    <nav className="grid gap-3 px-4 md:px-2">
+    <nav className="flex flex-col gap-3 px-4 md:px-2">
       {navigation.map(({ name, icon: Icon }, i) => {
         const active = i === activeSection && pathname === "/";
         return (
@@ -25,7 +25,7 @@ function MenuNavigation({ handleOnNavigation }: Props) {
             transition={{ duration: 0.5, delay: i * 0.05 }}
             href={`/#${name.toLowerCase()}`}
             key={name}
-            className={cn("flex items-center gap-4   navigation-link  opacity-60 ", {
+            className={cn("flex items-center gap-4   navigation-link  opacity-60 py-2", {
               "active-link [text-shadow:_0_0_4px_rgb(255_255_255_/_100%)] ": active,
             })}
           >
