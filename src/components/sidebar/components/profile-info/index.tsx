@@ -22,7 +22,7 @@ function ProfileInfo() {
       </MotionDiv>
 
       <MotionDiv initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 60 }}>
-        <h1 className="font-bold text-3xl">Nijat Niyazov</h1>
+        <h1 className="font-bold text-3xl [text-shadow:_0_0_4px_rgb(255_255_255_/_60%)] ">Nijat Niyazov</h1>
 
         <Link href={`mailto:${sideBarEmail}`} target="_blank" className="italic opacity-80">
           {sideBarEmail}
