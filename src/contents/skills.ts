@@ -1,7 +1,7 @@
-import { git, int, js, next, react, rhk, rquery, socket, supabase, tailwindcss, ts } from "@/assets/images/tech";
+import { fm, git, int, js, next, react, redux, rhk, rquery, socket, supabase, tailwindcss, ts } from "@/assets/images/tech";
 
 export const stacks = [
-  // { techImg: fm, techName: "Framer Motion" },
+  { techImg: fm, techName: "Framer Motion" },
   { techImg: git, techName: "Git & Github" },
   { techImg: int, techName: "Internalization" },
   { techImg: js, techName: "Javacsript" },
@@ -10,7 +10,7 @@ export const stacks = [
 
   { techImg: rhk, techName: "React Hook Form" },
   { techImg: rquery, techName: "React Query" },
-  // { techImg: redux, techName: "Redux Toolkit" },
+  { techImg: redux, techName: "Redux Toolkit" },
   { techImg: socket, techName: "Socket.io" },
   { techImg: supabase, techName: "Supabase" },
   { techImg: tailwindcss, techName: "Tailwind CSS" },
