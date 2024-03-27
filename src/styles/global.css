@@ -52,6 +52,10 @@
   html {
     scroll-behavior: smooth;
   }
+
+  .arxa-fon {
+    background-image: url("../assets/images/my/effekt.jpg");
+  }
   :root {
     --primary: 255, 189, 57;
     --secondary: 2, 134, 67;

@@ -10,7 +10,7 @@ import {
   ResumeIcon,
   TelegramIcon,
 } from "@/assets/icons";
-import { mine } from "@/assets/images";
+import { profile } from "@/assets/images/my";
 
 export const socialIcons = [
   { url: "https://github.com/nijat-niyazov", icon: GithubIcon },
@@ -20,7 +20,7 @@ export const socialIcons = [
   { url: "https://www.facebook.com/nijatniyazov", icon: FacebookIcon },
 ];
 
-export const sideBarImage = mine;
+export const sideBarImage = profile;
 export const sideBarEmail = "nijatniyazov56@gmail.com";
 
 export const navigation = [

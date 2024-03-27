@@ -1,9 +1,9 @@
-import { mine } from "@/assets/images";
+import { about } from "@/assets/images/my";
 
 export const whoIAm =
   "I am a solution oriented Frontend Developer. Experienced in web-development and now working on startup as frontend developer. I have successfully contributed to global projects and helped them achieve success. I love being in dynamic environments where innovation and continuous learning are crucial because my insatiable curiosity drives me to explore new areas of programming.";
 
-export const aboutImage = mine;
+export const aboutImage = about;
 
 export const aboutExperience =
   " I have experience building user interfaces and optimizing user experiences. With a solid foundation in JavaScript and TypeScript and a deep understanding of front-end frameworks like React.js and Next.js";
