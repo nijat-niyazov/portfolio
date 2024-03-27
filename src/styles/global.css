@@ -55,16 +55,6 @@
 
   .arxa-fon {
     background-image: url("../assets/images/my/effekt.jpg");
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-
-    background-repeat: no-repeat;
-    background-attachment: fixed;
   }
   :root {
     --primary: 255, 189, 57;
