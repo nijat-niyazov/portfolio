@@ -9,7 +9,7 @@ const Stacks = ({ ...props }: Props) => {
   return (
     <Carousel
       opts={{ align: "start", dragFree: true, loop: true }}
-      className="w-[358px] mx-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg cursor-grab active:cursor-grabbing"
+      className="max-w-[358px] mx-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg cursor-grab active:cursor-grabbing"
       // bg-red-500
     >
       <CarouselContent className="max-w-[400px] sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg cursor-grab active:cursor-grabbing">
