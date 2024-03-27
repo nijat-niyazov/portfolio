@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nijat Niyazov - Portfolio",
   description: "Front end developer portfolio website. Nijat Niyazov. React, Next.js, Tailwind CSS, Framer Motion, and more.",
-  openGraph: { images: [{ url: "../assets/images/my/profile.jpg" }] },
+  openGraph: { images: ["../assets/images/my/profile.jpg"] },
 };
 
 // export const viewPort: Viewport = {
