@@ -3,7 +3,7 @@ import { Stacks } from "@/sections/skills";
 
 const Skills = () => {
   return (
-    <Section id="skills" title="Skills" className="min-h-[50vh]  bg-gray-600">
+    <Section id="skills" title="Skills" className="min-h-[50vh]  bg-second-content">
       <Stacks />
     </Section>
   );

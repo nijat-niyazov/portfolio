@@ -53,62 +53,8 @@
     scroll-behavior: smooth;
   }
 
-  /* .bg-ios {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-  }
-
-  .bg-ios__back {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: brightness(0.5);
-
-    background: url("../assets/images/my/effekt.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -prefix-background-size: cover;
-    z-index: -1;
-  } */
-
-  .arxa-fon {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-
-    /* background-image: url("../assets/images/my/effekt.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -prefix-background-size: cover; */
-  }
   .second {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: brightness(0.5);
-
     background: url("../assets/images/my/effekt.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 
     -webkit-background-size: cover;
@@ -120,7 +66,20 @@
 
   :root {
     --primary: 255, 189, 57;
-    --secondary: 2, 134, 67;
+
+    /* --secondary: 34, 34, 59;
+    --thirdy: 74, 78, 105; */
+
+    /* --secondary: 86, 11, 173;
+    --thirdy: 147, 129, 255; */
+
+    --main-content: 60, 9, 108;
+    --secondary: 36, 0, 70;
+    --second-content: 75, 63, 114;
+
+    /* --thirdy: 123, 44, 191; */
+    /* --second-content: 61, 0, 102; */
+
     --text: 3, 8, 31;
     --bej: 233, 233, 233;
     --grey: 250, 250, 250;
@@ -156,14 +115,10 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(var(--primary));
+  background: rgba(var(--secondary));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #03081f;
+  background: rgba(var(--primary));
   border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }

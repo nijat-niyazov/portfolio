@@ -4,7 +4,6 @@ import Providers from "@/provider";
 export default function HomePage() {
   return (
     <Providers>
-      {/* <Test /> */}
       <Home />
       <About />
 

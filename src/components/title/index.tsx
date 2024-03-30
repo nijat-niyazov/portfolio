@@ -6,7 +6,7 @@ type TitleProps = { title: string; animated?: boolean } & HTMLAttributes<HTMLHea
 
 const Title = ({ title, className, animated = true }: TitleProps) => {
   const classNames = cn(
-    `text-primary after:content-[''] after:block after:w-16 after:mt-3 after:h-1 after:bg-primary font-semibold text-3xl mb-10 [text-shadow:_0_0_4px_rgb(255_189_57_/_50%)]  ${className}`
+    `text-primary after:content-[''] after:block after:w-16 after:mt-3 after:h-1 after:bg-primary font-semibold text-3xl mb-10 ${className}`
   );
 
   return animated ? (

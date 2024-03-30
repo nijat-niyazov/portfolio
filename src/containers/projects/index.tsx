@@ -3,7 +3,7 @@ import { Projects } from "@/sections/projects";
 
 const Portfolio = () => {
   return (
-    <Section id="portfolio" className="bg-slate-700 text-white " title="Portfolio">
+    <Section id="portfolio" className="bg-main-content text-white " title="Portfolio">
       {/* <CategoriesTabs /> */}
 
       <Projects />

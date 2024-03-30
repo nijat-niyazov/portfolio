@@ -14,7 +14,7 @@ const Projects = () => {
               alt={`${project.name}-img`}
               width={340}
               height={250}
-              className="w-full h-[250px] hover:brightness-75 transition-all duration-200 object-contain"
+              className="w-full h-[250px] hover:brightness-75 transition-all duration-200 object-cover"
             />
             <div className="bg-teal-800/60 w-full h-full absolute  top-full group-hover:top-0 transition-all duration-500 ease-in-out flex items-center justify-center">
               <Link href={`/${project.name.toLowerCase()}`} className="flex items-center justify-center gap-4 group my-auto">

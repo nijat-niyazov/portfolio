@@ -1,8 +1,9 @@
 import { Title } from "@/components";
 import { MotionLi } from "@/components/motionGenerator";
 import { Experience } from "@/contents/resume";
-import { differenceInMonths, format } from "date-fns";
+import { differenceInMonths } from "date-fns";
 import { Fragment } from "react";
+import WorkingDate from "./Date";
 
 const ProfessionalExperience = ({ experience }: { experience: Experience[] }) => {
   return (
@@ -24,16 +25,12 @@ const ProfessionalExperience = ({ experience }: { experience: Experience[] }) =>
               transition={{ duration: 1, delay: i * 0.1 }}
               key={job.id}
               style={{ paddingBottom: i !== experience.length - 1 ? "40px" : 0 }}
-              className="px-4    border-primary border-l-2 relative before:bg-gray-800 before:absolute before:top-0 before:right-full before:translate-x-1/2 before:mr-[1px] before:w-4 before:h-4 before:border-primary before:border-2 before:rounded-full"
+              className="px-4    border-primary border-l-2 relative before:bg-second-content before:absolute before:top-0 before:right-full before:translate-x-1/2 before:mr-[1px] before:w-4 before:h-4 before:border-primary before:border-2 before:rounded-full"
             >
               <h3 className="text-primary font-semibold text-xl leading-none uppercase mb-2">{job.jobTitle}</h3>
 
               <div className="grid gap-2 place-items-start text-base">
-                <p className="px-2 py-1 bg-gray-600 text-balance">
-                  {format(startDate, "LLLL y")} - {endDate ? format(endDate, "LLLL y") : "Present"} | <br className="md:hidden" />{" "}
-                  {totalMonths}
-                  {" month" + (totalMonths > 1 ? "s" : "")}
-                </p>
+                <WorkingDate {...{ startDate, endDate, totalMonths }} />
                 <span className="italic inline-block ">{job.location}</span>
               </div>
 

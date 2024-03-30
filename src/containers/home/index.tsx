@@ -4,8 +4,8 @@ import { Me } from "@/sections/home";
 const Home = () => {
   return (
     <section id="#home" className="relative">
-      <div className="arxa-fon  ">
-        <div className="second"></div>
+      <div className="w-full h-screen flex items-center justify-center bg-transparent ">
+        <div className="fixed inset-0 brightness-50 w-full h-full bg-center bg-no-repeat second"></div>
       </div>
 
       <MotionDiv

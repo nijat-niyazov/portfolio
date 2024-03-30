@@ -13,7 +13,7 @@ const SocialIcons = () => {
           key={url}
           target="_blank"
           href={url}
-          className="p-3 bg-slate-800 hover:bg-primary text-white rounded-full social-link"
+          className="p-3 bg-second-content hover:bg-primary text-white rounded-full social-link"
         >
           <Icon />
         </MotionLink>

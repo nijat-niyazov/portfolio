@@ -6,7 +6,7 @@ const ProjectPage = ({ params }: { params: { projectSlug: string } }) => {
   const data = projectsWithDetails[params.projectSlug as keyof typeof projectsWithDetails];
 
   return (
-    <Section title={`Project ${data.title}`} className="min-h-screen bg-slate-800 text-white">
+    <Section title={`Project ${data.title}`} className="min-h-screen bg-second-content text-white">
       <ProjectContainer data={data} />
     </Section>
   );

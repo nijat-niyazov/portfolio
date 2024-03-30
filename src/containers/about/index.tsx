@@ -6,7 +6,7 @@ import { DownloadCv, Info } from "@/sections/about";
 
 const About = () => {
   return (
-    <Section id="about" title="About" className="bg-slate-700 text-white selection:bg-primary selection:text-black">
+    <Section id="about" title="About" className="bg-main-content text-white selection:bg-primary selection:text-black">
       <MotionP
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -25,7 +25,7 @@ const About = () => {
           transition={{ duration: 0.8, type: "just" }}
           src={aboutImage}
           alt="me"
-          className="w-full object-cover h-[350px]"
+          className="w-full object-cover h-[350px] rounded-lg"
         />
 
         <div className="">
@@ -40,7 +40,7 @@ const About = () => {
               </span>
             </p>
 
-            <DownloadCv className="text-base" />
+            <DownloadCv className="text-base rounded-md" />
           </div>
 
           <p className="italic text-justify mb-5">{aboutExperience}</p>
