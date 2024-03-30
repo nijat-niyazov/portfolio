@@ -11,16 +11,6 @@ export const metadata: Metadata = {
   openGraph: { images: ["../assets/images/my/profile.jpg"] },
 };
 
-// export const viewPort: Viewport = {
-//   initialScale: 1,
-//   minimumScale: 1,
-//   maximumScale: 1,
-//   width: "device-width",
-//   height: "device-height",
-//   // userScalable: false,
-//   // viewportFit: "cover",
-// };
-
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>

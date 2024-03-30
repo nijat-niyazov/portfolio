@@ -4,7 +4,7 @@ import { Me } from "@/sections/home";
 const Home = () => {
   return (
     <section id="#home" className="h-screen bg-slate-500 relative">
-      <div className="arxa-fon bg-no-repeat bg-center min-h-screen bg-cover brightness-50  w-full -z-1 bg-fixed inset-0 " />
+      <div className="arxa-fon  " />
 
       <MotionDiv
         initial={{ opacity: 0, y: -50 }}

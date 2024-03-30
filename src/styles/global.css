@@ -54,8 +54,16 @@
   }
 
   .arxa-fon {
-    background-image: url("../assets/images/my/effekt.jpg");
+    background: url("../assets/images/my/effekt.jpg") no-repeat center center fixed;
+    width: 100vh;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -prefix-background-size: cover;
+    filter: brightness(0.5);
   }
+
   :root {
     --primary: 255, 189, 57;
     --secondary: 2, 134, 67;
