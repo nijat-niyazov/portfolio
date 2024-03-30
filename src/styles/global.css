@@ -53,10 +53,9 @@
     scroll-behavior: smooth;
   }
 
-  .bg-ios {
+  /* .bg-ios {
     width: 100%;
     height: 100vh;
-    /* filter: brightness(0.5); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +68,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    filter: brightness(0.5);
 
     background: url("../assets/images/my/effekt.jpg");
     background-repeat: no-repeat;
@@ -80,12 +80,11 @@
     -moz-background-size: cover;
     -prefix-background-size: cover;
     z-index: -1;
-  }
+  } */
 
   .arxa-fon {
     width: 100%;
     height: 100vh;
-    filter: brightness(0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,6 +104,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    filter: brightness(0.5);
 
     background: url("../assets/images/my/effekt.jpg");
     background-repeat: no-repeat;
