@@ -4,9 +4,9 @@ import { Me } from "@/sections/home";
 const Home = () => {
   return (
     <section id="#home" className="h-screen bg-slate-500 relative">
-      <div className="arxa-fon  ">
+      {/* <div className="arxa-fon  ">
         <div className="second"></div>
-      </div>
+      </div> */}
 
       <MotionDiv
         initial={{ opacity: 0, y: -50 }}
