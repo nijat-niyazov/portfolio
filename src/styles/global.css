@@ -64,8 +64,17 @@
     z-index: -1;
   }
 
+  .wishx {
+    background-image: url("https://api.wishx.me/storage/uploads/wishx2023_76351696676680.webp");
+  }
+  .qmeter {
+    background-image: url("https://scontent.fgyd12-1.fna.fbcdn.net/v/t39.30808-6/356226612_664324672376397_7081056755156086223_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ERzPxhWrY8kAX-vsC_H&_nc_ht=scontent.fgyd12-1.fna&oh=00_AfBBb6_cxKOqo7Up5QH7IHsYRpT2zv10FVyw8bdYjm8wZQ&oe=660F040B");
+  }
+
   :root {
     --primary: 255, 189, 57;
+    --secondary: 36, 0, 70;
+    --content: 75, 63, 114;
 
     /* --secondary: 34, 34, 59;
     --thirdy: 74, 78, 105; */
@@ -73,12 +82,8 @@
     /* --secondary: 86, 11, 173;
     --thirdy: 147, 129, 255; */
 
-    --main-content: 60, 9, 108;
-    --secondary: 36, 0, 70;
-    --second-content: 75, 63, 114;
-
     /* --thirdy: 123, 44, 191; */
-    /* --second-content: 61, 0, 102; */
+    /* --content: 61, 0, 102; */
 
     --text: 3, 8, 31;
     --bej: 233, 233, 233;

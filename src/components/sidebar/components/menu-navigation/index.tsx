@@ -25,8 +25,8 @@ function MenuNavigation({ handleOnNavigation }: Props) {
             transition={{ duration: 0.5, delay: i * 0.05 }}
             href={`/#${name.toLowerCase()}`}
             key={name}
-            className={cn("flex items-center gap-4   navigation-link  opacity-60 py-2", {
-              "active-link [text-shadow:_0_0_4px_rgb(255_255_255_/_100%)] ": active,
+            className={cn("flex items-center gap-4   navigation-link  opacity-60 py-2 ", {
+              "active-link [text-shadow:_0_0_4px_rgb(255_255_255_/_100%)] w-[80%]": active,
             })}
           >
             <Icon />

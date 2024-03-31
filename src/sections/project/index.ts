@@ -1,5 +1,6 @@
+import ProjectBgImage from "./bg-image";
 import Details from "./details";
-import GoToBack from "./go-to-back";
+import GoBack from "./go-back";
 import ProjectInfo from "./info";
 
-export { Details, GoToBack, ProjectInfo };
+export { Details, GoBack, ProjectBgImage, ProjectInfo };

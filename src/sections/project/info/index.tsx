@@ -2,9 +2,9 @@ import { MotionLi } from "@/components/motionGenerator";
 
 const ProjectInfo = ({ about }: { about: string[] }) => {
   return (
-    <div>
+    <div className="bg-content/80 p-4 rounded-lg">
       <h1 className="text-3xl  font-semibold mb-4">About Project: </h1>
-      <ul role="list" className="opacity-80  pl-5 marker:text-2xl marker:text-white list-disc text-lg md:text-base text-justify ">
+      <ul role="list" className="pl-5 marker:text-2xl marker:text-white list-disc text-lg md:text-base text-justify ">
         {about.map((info, index) => (
           <MotionLi
             key={index}

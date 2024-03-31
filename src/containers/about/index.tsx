@@ -6,7 +6,7 @@ import { DownloadCv, Info } from "@/sections/about";
 
 const About = () => {
   return (
-    <Section id="about" title="About" className="bg-main-content text-white selection:bg-primary selection:text-black">
+    <Section id="about" title="About" className="bg-content text-white md:min-h-screen ">
       <MotionP
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

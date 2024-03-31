@@ -2,45 +2,58 @@ import { w1, w2, w3, w4, w5, w6, w7, wishxImage } from "@/assets/images/projects
 
 export const projects = [
   { img: wishxImage, name: "Wishx", url: "wishx" },
-  { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
-  { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
+  // { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
+  // { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
 ];
 
 export const projectsWithDetails = {
   wishx: {
     title: "Wishx.me",
+    bg: "wishx",
     details: {
       stacks: ["Next.js 13", "Typescript", "Tailwind CSS", "Zustand", "Stripe", "Pusher JS", " Formik", "Material UI"],
       category: ["Typescript", "NextJS"],
+
       images: [w1, w2, w3, w4, w5, w6, w7],
       url: "https://wishx.me",
     },
     about: [
-      "As a key member of the front-end development team for WishX, our project aimed to facilitate wish fulfillment through gifting. ",
+      "WISHX.me is a platform designed to facilitate collective congratulations, primarily focusing on fulfilling wishes for birthdays and holidays in a unique and meaningful way.",
 
-      "Leveraging Next.js 13 and TypeScript, we prioritized efficiency and error prevention. Tailwind CSS enabled rapid styling, while Zustand provided lightweight state management for seamless performance. Used Zustand for lightweight, scalable state management, which has good performance",
+      "Users can create personalized wishes on the platform and share them with friends and followers, who can then contribute symbolic gifts ranging from $5 to $500 with a heartfelt message. The platform aims to channel the energy of greetings towards fulfilling wishes and bringing dreams to life.",
 
-      'To ensure a better user experience, I proposed to the team to use infinite scrolling and data retrieval instead of pagination which was used in previous version. We kept the first incoming data as "SSR" to avoid delaying the incoming data during infinite scrolling',
+      "Users can register through standard registration or OAuth methods to access our platform. Once registered, they can create their wishes, linking their bank account for seamless gift transactions. WISHX.me provides a hassle-free experience, enabling users to send birthday wishes using various payment options such as credit cards, links, Apple Pay, and Cash App.",
     ],
   },
-  alac: {
-    title: "Alac.az",
-    details: {
-      stacks: ["Next.js", "Tailwind CSS", "Headless UI"],
-      category: ["Typescript", "NextJS"],
-      images: [wishxImage],
-      url: "https://wishx.me",
-    },
-    about: ["eeeee", "cccc", "dddd"],
-  },
-  filtering: {
-    title: "Wishx.me",
+
+  qmeter: {
+    title: "Qmeter.me",
+    bg: "qmeter",
     details: {
       stacks: ["Next.js 13", "Typescript", "Tailwind CSS", "Zustand", "Stripe", "Pusher JS", " Formik", "Material UI"],
       category: ["Typescript", "NextJS"],
-      images: [wishxImage],
-      url: "https://wishx.me",
+
+      images: [w1, w2, w3, w4, w5, w6, w7],
+      url: "https://qmeter.me",
     },
-    about: ["eeeee", "cccc", "dddd"],
+    about: [
+      "QMETER.me is a platform designed to facilitate collective congratulations, primarily focusing on fulfilling wishes for birthdays and holidays in a unique and meaningful way.",
+
+      "Users can create personalized wishes on the platform and share them with friends and followers, who can then contribute symbolic gifts ranging from $5 to $500 with a heartfelt message. The platform aims to channel the energy of greetings towards fulfilling wishes and bringing dreams to life.",
+
+      "Users can register through standard registration or OAuth methods to access our platform. Once registered, they can create their wishes, linking their bank account for seamless gift transactions. QMETER.me provides a hassle-free experience, enabling users to send birthday wishes using various payment options such as credit cards, links, Apple Pay, and Cash App.",
+    ],
   },
+
+  // filtering: {
+  //   title: "Wishx.me",
+  //   bg: "wish",
+  //   details: {
+  //     stacks: ["Next.js 13", "Typescript", "Tailwind CSS", "Zustand", "Stripe", "Pusher JS", " Formik", "Material UI"],
+  //     category: ["Typescript", "NextJS"],
+  //     images: [wishxImage],
+  //     url: "https://wishx.me",
+  //   },
+  //   about: ["eeeee", "cccc", "dddd"],
+  // },
 };

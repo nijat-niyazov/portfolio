@@ -1,19 +1,20 @@
-import { Details, GoToBack, ProjectInfo } from "@/sections/project";
+import { Section } from "@/components";
+import { Details, GoBack, ProjectBgImage, ProjectInfo } from "@/sections/project";
 import { StaticImageData } from "next/image";
-import { Fragment } from "react";
 
 export type DetailsProps = { images: StaticImageData[]; url: string; repo?: string; category: string[]; stacks: string[] };
 
-type Props = { data: { details: DetailsProps; about: string[] } };
+type Props = { data: { title: string; details: DetailsProps; about: string[]; bg: string } };
 
-const ProjectContainer = ({ data: { about, details } }: Props) => {
+const ProjectContainer = ({ data: { about, details, title, bg } }: Props) => {
   return (
-    <Fragment>
-      <GoToBack />
+    <Section title={`Project ${title}`} className="min-h-screen  text-white border-none">
+      <ProjectBgImage bg={bg} />
+      <GoBack />
 
       <Details details={details} />
       <ProjectInfo about={about} />
-    </Fragment>
+    </Section>
   );
 };
 

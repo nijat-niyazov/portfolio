@@ -11,8 +11,7 @@ const config = {
         secondary: withOpacity("--secondary"),
         thirdy: withOpacity("--thirdy"),
 
-        "main-content": withOpacity("--main-content"),
-        "second-content": withOpacity("--second-content"),
+        content: withOpacity("--content"),
       },
       dropShadow: {
         "md-primary": `0 0px 5px rgba(var(--primary))`,

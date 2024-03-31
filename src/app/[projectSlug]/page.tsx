@@ -1,15 +1,10 @@
-import { Section } from "@/components";
 import { ProjectContainer } from "@/containers";
 import { projectsWithDetails } from "@/contents/projects";
 
 const ProjectPage = ({ params }: { params: { projectSlug: string } }) => {
   const data = projectsWithDetails[params.projectSlug as keyof typeof projectsWithDetails];
 
-  return (
-    <Section title={`Project ${data.title}`} className="min-h-screen bg-second-content text-white">
-      <ProjectContainer data={data} />
-    </Section>
-  );
+  return <ProjectContainer data={data} />;
 };
 
 export default ProjectPage;
