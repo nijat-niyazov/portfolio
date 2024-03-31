@@ -7,7 +7,7 @@ import { cn } from "@/utils";
 import { HTMLAttributes, createContext, forwardRef } from "react";
 
 /* --------------------------------- Plugins -------------------------------- */
-// // import Autoplay from "embla-carousel-autoplay";
+import Autoplay from "embla-carousel-autoplay";
 // import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 
 /* ---------------------------------- Types --------------------------------- */
@@ -48,11 +48,11 @@ export function useCarousel() {
 const Carousel = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement> & CarouselProps>(
   ({ orientation = "horizontal", opts, setApi, plugins, className, children, ...props }, ref) => {
     const [carouselRef, api] = useEmblaCarousel({ ...opts, axis: orientation === "horizontal" ? "x" : "y" }, [
-      // Autoplay({
-      //   delay: 2000,
-      //   stopOnInteraction: false,
-      //   stopOnHover: true,
-      // }),
+      Autoplay({
+        delay: 2000,
+        stopOnInteraction: false,
+        stopOnHover: true,
+      }),
       // WheelGesturesPlugin(),
     ]);
 
