@@ -3,6 +3,7 @@ import { fullStack, w1, w2, w3, w4, w5, w6, w7, wishxImage } from "@/assets/imag
 export const projects = [
   { img: wishxImage, name: "Wishx.me", url: "wishx" },
   { img: fullStack, name: "Full Stack E-commerce with filterization", url: "e-commerce" },
+  // { img: fullStack, name: "Full Stack E-commerce with filterization", url: "e-commerce" },
 ];
 
 export const projectsWithDetails = {
