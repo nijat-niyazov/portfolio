@@ -6,7 +6,7 @@ import { DownloadCv, Info } from "@/sections/about";
 
 const About = () => {
   return (
-    <Section id="about" title="About" className="bg-content text-white md:min-h-screen ">
+    <Section id="about" title="About" className="text-white md:min-h-screen ">
       <MotionP
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -36,7 +36,7 @@ const About = () => {
               </span>
               <span className="hidden md:inline-block md:mx-3">&</span>
               <span className="flex items-center ">
-                Mobile Developer <MobileIcon className="ml-1" />
+                Frontend Developer <MobileIcon className="ml-1" />
               </span>
             </p>
 

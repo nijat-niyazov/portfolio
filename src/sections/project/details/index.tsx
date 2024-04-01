@@ -21,21 +21,21 @@ const Details = ({ details: { stacks, category, images, url, repo } }: { details
 
       {/* <ImagesCarousel images={images} /> */}
 
-      <div className="md:w-3/5 bg-content/80 rounded-lg">
+      <div className="md:w-3/5 rounded-lg">
         <h3 className="font-semibold text-xl pb-3 block border-b-2 border-gray-600">Details: </h3>
 
-        <MotionUl role="list" className="grid gap-2 mt-4 opacity-80 pl-1" initial="hidden" animate="visible">
-          <MotionLi className="flex items-center gap-2">
+        <MotionUl role="list" className="grid gap-2 mt-4  pl-1" initial="hidden" animate="visible">
+          <MotionLi className="flex items-center gap-2 opacity-80 hover:opacity-100">
             <span className="font-semibold">Category:</span>
-            <span>{category.join(", ")}</span>
+            <span className="font-light">{category.join(", ")}</span>
           </MotionLi>
-          <MotionLi className="flex items-center gap-2">
+          <MotionLi className="flex items-center gap-2 opacity-80 hover:opacity-100">
             <span className="font-semibold">Project URL:</span>
-            <Link href={url} target="_blank" className="flex items-start gap-2 text-primary">
-              {url} <ArrowUpRight className="w-3.5 h-3.5" />
+            <Link href={url} target="_blank" className="flex items-start gap-2 text-primary relative group font-light">
+              {url} <ArrowUpRight className="w-3.5 h-3.5 absolute -right-5 group-hover:-right-8   transition-all duration-200" />
             </Link>
           </MotionLi>
-          <MotionLi className="flex items-center gap-2  ">
+          <MotionLi className="flex items-center gap-2 opacity-80 hover:opacity-100  ">
             <span className="font-semibold">Github code:</span>
             {!repo ? (
               <Fragment>

@@ -1,9 +1,10 @@
 import { w1, w2, w3, w4, w5, w6, w7, wishxImage } from "@/assets/images/projects";
 
 export const projects = [
-  { img: wishxImage, name: "Wishx", url: "wishx" },
-  // { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
-  // { img: "https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg", name: "Wishx", url: "#" },
+  { img: wishxImage, name: "Wishx.me", url: "wishx" },
+  // { img: wishxImage, name: "Wishx.me", url: "wishx" },
+  // { img: wishxImage, name: "Wishx.me", url: "wishx" },
+  // { img: wishxImage, name: "Wishx.me", url: "wishx" },
 ];
 
 export const projectsWithDetails = {

@@ -1,5 +1,5 @@
 export const resumeInfo =
-  "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.";
+  "Began my journey as an intern where I expanded my knowledge with advantages of advanced features of React and Next.js. This growth helped me expand my working in real-world-projects and boosted my problem solving skillls. I got a chance to become an integral core team member in global projects. Excited to further expand my skills, being team member of dynamic team and professional opportunities.";
 
 export const professionalExperience = [
   {
@@ -12,23 +12,11 @@ export const professionalExperience = [
     contributions: [
       "As a key member of the front-end development team for WishX, our project aimed to facilitate wish fulfillment through gifting.",
       "Leveraging Next.js 13 and TypeScript, we prioritized efficiency and error prevention. Tailwind CSS enabled rapid styling, while Zustand provided lightweight state management for seamless performance.",
-      "Conceptualized and developed the platform's features and functionalities to meet user needs effectively.      Implemented secure payment gateways and ensured seamless integration with various payment methods.",
+      "Conceptualized and developed the platform's features and functionalities to meet user needs effectively. Implemented secure payment gateways and ensured seamless integration with various payment methods.",
       "To ensure a better user experience, I proposed to the team to use infinite scrolling and data retrieval instead of pagination which was used in previous version. We kept the first incoming data as 'SSR' to avoid delaying the incoming data during infinite scrolling",
     ],
   },
-  // {
-  //   id: 2,
-  //   job_title: "Frontend Developer",
-  //   date: { start: "2023, 11", end: "2023, 12" },
-  //   location: "Baku, Azerbaijan",
-  //   compnay_name: "Alac.az",
-  //   type: "Freelance",
-  //   contributions: [
-  //     "I was Frontend developer of a one-page landing website for the ALAC app. Next.js, Tailwind CSS and Headless UI was core stack for page.",
-  //     "Our focus was to create a sleek and responsive design to introduce users to the ALAC concept. Currently a team is focused on developing the mobile app.",
-  //     "I'm ready to expand the website and build its full functionality if the need arises in the future (most likely).",
-  //   ],
-  // },
+
   {
     id: 3,
     job_title: "Intern Frontend Developer",
