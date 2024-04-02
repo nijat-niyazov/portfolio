@@ -11,8 +11,6 @@ const ProfessionalExperience = ({ experience }: { experience: Experience[] }) =>
 
       <ul className="grid md:grid-cols-2 items-start">
         {experience.map((job, i) => {
-          
-
           return (
             <MotionLi
               initial={{ y: 100, opacity: 0 }}
@@ -28,11 +26,11 @@ const ProfessionalExperience = ({ experience }: { experience: Experience[] }) =>
                 <span className="text-primary font-medium text-lg  rounded-md">{job.type}</span>
               </div>
 
-              <h3 className=" font-semibold bg-primary p-2 rounded-md text-secondary text-xl leading-none uppercase mb-2 inline-block">
+              <h3 className=" font-semibold bg-primary p-2 rounded-md text-secondary text-lg md:text-xl leading-none uppercase mb-2 inline-block whitespace-nowrap">
                 {job.job_title}
               </h3>
 
-              <div className="grid gap-2 place-items-start text-base">
+              <div className="flex flex-col md:flex-row   justify-between items-start gap-2 md:items-center text-base">
                 <WorkingDate date={job.date} />
                 <span className="italic inline-block ">{job.location}</span>
               </div>

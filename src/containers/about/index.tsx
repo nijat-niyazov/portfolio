@@ -1,7 +1,8 @@
 import { LaptopIcon, MobileIcon } from "@/assets/icons";
 import { Section } from "@/components";
+import Emphasized from "@/components/emhpasized";
 import { MotionImage, MotionP } from "@/components/motionGenerator";
-import { aboutExperience, aboutImage, whatILove, whoIAm } from "@/contents/about";
+import { aboutImage, whatILove } from "@/contents/about";
 import { DownloadCv, Info } from "@/sections/about";
 
 const About = () => {
@@ -14,7 +15,11 @@ const About = () => {
         viewport={{ margin: "150px 0px 0px 0px", once: true }}
         className="mb-8 text-lg text-justify"
       >
-        {whoIAm}
+        {/* {whoIAm} */}
+        Solution oriented <Emphasized>Frontend Developer</Emphasized>. I have very <Emphasized>good communication skills</Emphasized> and{" "}
+        <Emphasized>strong command of English</Emphasized> language. I have successfully contributed to global projects and helped them
+        achieve success. I love being in dynamic environments where innovation and continuous learning are crucial because my insatiable
+        curiosity drives me to explore new areas of programming.
       </MotionP>
 
       <div className="flex flex-col md:flex-row items-start gap-5 ">
@@ -43,7 +48,11 @@ const About = () => {
             <DownloadCv className="text-base rounded-md" />
           </div>
 
-          <p className="italic text-justify mb-5">{aboutExperience}</p>
+          <p className="italic text-justify mb-5">
+            {/* {aboutExperience} */}I have experience building user interfaces and optimizing user experiences. With a solid foundation in{" "}
+            <Emphasized>JavaScript and TypeScript</Emphasized> and a deep understanding of front-end frameworks like{" "}
+            <Emphasized>React.js and Next.js</Emphasized>
+          </p>
 
           <Info />
 

@@ -24,7 +24,7 @@ const Projects = () => {
               >
                 <p className="font-semibold text-2xl  text-center min-h-9">{name} </p>
 
-                <Link href={`/${url}`} className="flex items-center justify-center gap-2 group my-auto min-h-9">
+                <Link href={`/${url}`} className="flex items-center justify-center gap-2 group my-auto h-12">
                   <p className="font-semibold text-xl">See Details </p>
                   <EyeIcon className="w-8 h-8  text-secondary " />
                 </Link>

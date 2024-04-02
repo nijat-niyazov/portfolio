@@ -1,7 +1,7 @@
 import { about } from "@/assets/images/my";
 
 export const whoIAm =
-  "I am a solution oriented Frontend Developer. Experienced in web-development and now working on startup as frontend developer. I have successfully contributed to global projects and helped them achieve success. I love being in dynamic environments where innovation and continuous learning are crucial because my insatiable curiosity drives me to explore new areas of programming.";
+  "Solution oriented Frontend Developer. I have very good communication skills and strong command of English language. I have successfully contributed to global projects and helped them achieve success. I love being in dynamic environments where innovation and continuous learning are crucial because my insatiable curiosity drives me to explore new areas of programming.";
 
 export const aboutImage = about;
 
