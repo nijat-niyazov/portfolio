@@ -19,4 +19,5 @@ export const personalInfo = [
   { category: "Degree", text: "Bachelor" },
   { category: "University", text: "UNEC" },
   { category: "Freelance", text: "Available" },
+  { category: "Remote", text: "Available" },
 ];
