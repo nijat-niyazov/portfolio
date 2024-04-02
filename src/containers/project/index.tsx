@@ -8,7 +8,7 @@ type Props = { data: { title: string; details: DetailsProps; about: string[]; bg
 
 const ProjectContainer = ({ data: { about, details, title, bg } }: Props) => {
   return (
-    <Section title={`Project ${title}`} className="min-h-screen  text-white border-none bg-transparent">
+    <Section title={`Project - ${title}`} className="min-h-screen  text-white border-none bg-transparent mt-10 md:m-0">
       <ProjectBgImage bg={bg} />
       <GoBack />
 
