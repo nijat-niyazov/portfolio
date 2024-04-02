@@ -2,7 +2,11 @@ import { fullStack, w1, w2, w3, w4, w5, w6, w7, wishxImage } from "@/assets/imag
 
 export const projects = [
   { img: wishxImage, name: "Wishx.me", url: "wishx" },
-  { img: fullStack, name: "Full Stack E-commerce ", url: "e-commerce" },
+  {
+    img: fullStack,
+    name: "Full Stack E-commerce ",
+    url: "e-commerce",
+  },
 ];
 
 export const projectsWithDetails = {
@@ -34,13 +38,14 @@ export const projectsWithDetails = {
 
       images: [w1, w2, w3, w4, w5, w6, w7],
       url: "https://advanced-filter-next14.vercel.app/en",
+      repo: "https://github.com/nijat-niyazov/avdanced-filterization-next",
     },
     about: [
       "This project is not focused on UI. It's about the functionality of the e-commerce website. The website has a filterization feature that allows users to filter products based on their preferences. The website is built with Next.js",
 
-      "Also this project has internalization with i18next which allows users to switch between languages.",
+      "Also this project has internalization with i18next which allows users to switch between languages. Different Local Times and currencies",
 
-      "The website is responsive and has a dark mode feature which is built with Next-Themes and global variables of different css files",
+      "The website has also a dark and system mode feature which is built with Next-Themes and global variables of different css files",
     ],
   },
 

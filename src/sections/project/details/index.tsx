@@ -30,9 +30,10 @@ const Details = ({ details: { stacks, category, images, url, repo } }: { details
             <span className="font-light">{category.join(", ")}</span>
           </MotionLi>
           <MotionLi className="flex items-center gap-2 opacity-80 hover:opacity-100 ">
-            <span className="font-semibold">Project URL:</span>
-            <Link href={url} target="_blank" className="flex items-start gap-2 text-primary relative group font-light  truncate">
-              {url} <ArrowUpRight className="w-3.5 h-3.5 absolute -right-5 group-hover:-right-8   transition-all duration-200" />
+            <span className="font-semibold ">Project URL:</span>
+            <Link href={url} target="_blank" className="flex items-start gap-2 text-primary relative group font-light  ">
+              <span className="truncate max-w-[235px]">{url}</span>
+              <ArrowUpRight className="w-3.5 h-3.5 absolute -right-5 group-hover:-right-8   transition-all duration-200" />
             </Link>
           </MotionLi>
           <MotionLi className="flex items-center gap-2 opacity-80 hover:opacity-100  ">
@@ -43,7 +44,7 @@ const Details = ({ details: { stacks, category, images, url, repo } }: { details
               </Fragment>
             ) : (
               <Link href={repo} className="flex items-start gap-2 text-primary overflow-hidden">
-                <span className="truncate max-w-[235px]">{repo}</span>
+                <span className="truncate max-w-[205px]">{repo}</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             )}
