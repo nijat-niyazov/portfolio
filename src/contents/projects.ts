@@ -1,9 +1,9 @@
-import { fullStack, w1, w2, w3, w4, w5, w6, w7, wishxImage } from "@/assets/images/projects";
+import { eCommerce, fullStack, w1, w2, w3, w4, w5, w6, w7, wishxImage } from "@/assets/images/projects";
 
 export const projects = [
   { img: wishxImage, name: "Wishx.me", url: "wishx" },
   {
-    img: fullStack,
+    img: eCommerce,
     name: "Full Stack E-commerce ",
     url: "e-commerce",
   },
@@ -36,7 +36,7 @@ export const projectsWithDetails = {
       stacks: ["Next.js 14", "Typescript", "Tailwind CSS", "i18next", "Next-Themes"],
       category: ["Typescript", "NextJS"],
 
-      images: [w1, w2, w3, w4, w5, w6, w7],
+      images: [fullStack],
       url: "https://advanced-filter-next14.vercel.app/en",
       repo: "https://github.com/nijat-niyazov/avdanced-filterization-next",
     },
