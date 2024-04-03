@@ -8,7 +8,7 @@ type Props = {} & HTMLAttributes<HTMLDivElement>;
 const Stacks = ({ ...props }: Props) => {
   return (
     <Carousel
-      opts={{ align: "start", dragFree: true, loop: true }}
+      opts={{ align: "start", dragFree: true, loop: true, duration: 10000 }}
       className="max-w-[358px] mx-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-[1020px] cursor-grab active:cursor-grabbing"
       // bg-red-500
     >

@@ -49,7 +49,7 @@ const Carousel = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement> & Car
   ({ orientation = "horizontal", opts, setApi, plugins, className, children, ...props }, ref) => {
     const [carouselRef, api] = useEmblaCarousel({ ...opts, axis: orientation === "horizontal" ? "x" : "y" }, [
       Autoplay({
-        delay: 2000,
+        delay: 0,
         stopOnInteraction: false,
         stopOnHover: true,
       }),
