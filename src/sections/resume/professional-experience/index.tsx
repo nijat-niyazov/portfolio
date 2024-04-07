@@ -11,7 +11,8 @@ const ProfessionalExperience = ({ experience }: { experience: Experience[] }) =>
 
       <ul className="grid md:grid-cols-2 items-start">
         {experience.map((job, i) => {
-          return (
+          const { hidden } = job;
+          return !hidden ? (
             <MotionLi
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -49,7 +50,7 @@ const ProfessionalExperience = ({ experience }: { experience: Experience[] }) =>
                 ))}
               </ul>
             </MotionLi>
-          );
+          ) : null;
         })}
       </ul>
     </Fragment>

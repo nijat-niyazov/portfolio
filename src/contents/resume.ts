@@ -16,6 +16,21 @@ export const professionalExperience = [
       "To ensure a better user experience, I proposed to the team to use infinite scrolling and data retrieval instead of pagination which was used in previous version. We kept the first incoming data as 'SSR' to avoid delaying the incoming data during infinite scrolling",
     ],
   },
+  {
+    id: 2,
+    hidden: true,
+    job_title: "Frontend & Nextjs Developer",
+    date: { start: "2023, 8" },
+    location: "Wilmington, USA",
+    compnay_name: "WISHX",
+    type: "Remote",
+    contributions: [
+      "As a key member of the front-end development team for WishX, our project aimed to facilitate wish fulfillment through gifting.",
+      "Leveraging Next.js 13 and TypeScript, we prioritized efficiency and error prevention. Tailwind CSS enabled rapid styling, while Zustand provided lightweight state management for seamless performance.",
+      "Conceptualized and developed the platform's features and functionalities to meet user needs effectively. Implemented secure payment gateways and ensured seamless integration with various payment methods.",
+      "To ensure a better user experience, I proposed to the team to use infinite scrolling and data retrieval instead of pagination which was used in previous version. We kept the first incoming data as 'SSR' to avoid delaying the incoming data during infinite scrolling",
+    ],
+  },
 
   {
     id: 3,

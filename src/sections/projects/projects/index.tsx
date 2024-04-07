@@ -6,8 +6,8 @@ import Link from "next/link";
 const Projects = () => {
   return (
     <ul className="grid md:grid-cols-2 gap-5">
-      {projects.map(({ url, img, name }) => {
-        return (
+      {projects.map(({ url, img, name, hidden }) => {
+        return !hidden ? (
           <li key={url.toLowerCase()} className="rounded-md group overflow-hidden  group bg-secondary">
             <Image
               src={img}
@@ -31,7 +31,7 @@ const Projects = () => {
               </div>
             </div>
           </li>
-        );
+        ) : null;
       })}
     </ul>
   );

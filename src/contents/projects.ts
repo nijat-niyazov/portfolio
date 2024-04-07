@@ -2,11 +2,9 @@ import { eCommerce, fullStack, w1, w2, w3, w4, w5, w6, w7, wishxImage } from "@/
 
 export const projects = [
   { img: wishxImage, name: "Wishx.me", url: "wishx" },
-  {
-    img: eCommerce,
-    name: "Full Stack E-commerce ",
-    url: "e-commerce",
-  },
+  { img: eCommerce, name: "Full Stack E-commerce ", url: "e-commerce" },
+
+  { img: eCommerce, name: "FromFolio", url: "fromfolio ", hidden: true },
 ];
 
 export const projectsWithDetails = {
@@ -48,16 +46,4 @@ export const projectsWithDetails = {
       "The website has also a dark and system mode feature which is built with Next-Themes and global variables of different css files",
     ],
   },
-
-  // filtering: {
-  //   title: "Wishx.me",
-  //   bg: "wish",
-  //   details: {
-  //     stacks: ["Next.js 13", "Typescript", "Tailwind CSS", "Zustand", "Stripe", "Pusher JS", " Formik", "Material UI"],
-  //     category: ["Typescript", "NextJS"],
-  //     images: [wishxImage],
-  //     url: "https://wishx.me",
-  //   },
-  //   about: ["eeeee", "cccc", "dddd"],
-  // },
 };
