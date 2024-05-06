@@ -54,7 +54,7 @@
   }
 
   .second {
-    background: url("../assets/images/my/effekt.jpg");
+    background: url('../assets/images/my/effekt.jpg');
     background-size: cover;
 
     -webkit-background-size: cover;
@@ -65,10 +65,13 @@
   }
 
   .wishx {
-    background-image: url("https://api.wishx.me/storage/uploads/wishx2023_76351696676680.webp");
+    background-image: url('https://api.wishx.me/storage/uploads/wishx2023_76351696676680.webp');
   }
   .full-stack {
-    background-image: url("../assets/images/projects/fullStack-next.png");
+    background-image: url('../assets/images/projects/fullStack-next.png');
+  }
+  .scrapper {
+    background-image: url('../assets/images/projects/scrapper.png');
   }
 
   :root {
@@ -105,7 +108,7 @@
     filter: drop-shadow(0px 0px 2px rgb(var(--primary)));
   }
 
-  html[data-theme="dark"] {
+  html[data-theme='dark'] {
     --header: #03081f;
     --primary: #03081f;
     --secondary: #fc8a06;
