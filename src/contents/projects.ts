@@ -1,6 +1,22 @@
-import { eCommerce, fullStack, scrapper, w1, w2, w3, w4, w5, w6, w7, wishxImage } from '@/assets/images/projects';
+import { eCommerce, fullStack, scrapper, wishxImage } from '@/assets/images/projects';
+
+import { w1, w2, w3, w4, w5, w6, w7 } from '@/assets/images/projects/wishx';
+
+import {
+  add_proj,
+  cover_fromfolio,
+  dashboard,
+  followers,
+  messages,
+  my,
+  nots,
+  project,
+  review_mentor,
+} from '@/assets/images/projects/fromfolio';
 
 export const projects = [
+  { img: cover_fromfolio, name: 'Inner App', url: 'inner-app' },
+  { img: cover_fromfolio, name: 'Fromfolio', url: 'fromfolio' },
   { img: wishxImage, name: 'Wishx.me', url: 'wishx' },
   { img: eCommerce, name: 'Full Stack E-commerce ', url: 'e-commerce' },
   { img: scrapper, name: 'Scrapper Table generates Excel file', url: 'scrapper' },
@@ -13,7 +29,16 @@ export const projectsWithDetails = {
     title: 'Wishx.me',
     bg: 'wishx',
     details: {
-      stacks: ['Next.js 13', 'Typescript', 'Tailwind CSS', 'Zustand', 'Stripe', 'Pusher JS', ' Formik', 'Material UI'],
+      stacks: [
+        'Next.js 13',
+        'Typescript',
+        'Tailwind CSS',
+        'Zustand',
+        'Stripe',
+        'Pusher JS',
+        ' Formik',
+        'Material UI',
+      ],
       category: ['Typescript', 'NextJS'],
 
       images: [w1, w2, w3, w4, w5, w6, w7],
@@ -65,6 +90,62 @@ export const projectsWithDetails = {
 
       'You can add, delete, edit and check for stocks in the table. You can filter data by date and by name with ascending and descending order. Also you have options for searching query like containing or eqaul etc. Filterization is generic based on limit and offset. ',
       'Also you can export data to excel file.',
+    ],
+  },
+  fromfolio: {
+    title: 'Fromfolio - platform for designers to showcase their work',
+    bg: 'fromfolio',
+    details: {
+      stacks: [
+        'Next 14',
+        'Typescript',
+        'React Query',
+        'Tailwind CSS',
+        'Shadcn UI',
+        'Date-fns',
+        'Stripe',
+        'Web Sockets',
+      ],
+      category: ['Typescript', 'NExtJS'],
+
+      images: [add_proj, dashboard, followers, messages, project, my, review_mentor, nots],
+      url: 'http://fromfolio.com',
+    },
+    about: [
+      ' Utilized advanced Next.js 14 functions extensively, using its capabilities to ensure optimal performance and seamless user experience',
+
+      'Implemented JWT for secure and stateless authentication in the project',
+
+      'Used React Query to manage client-side data fetching efficiently, especially in scenarios involving infinite queries',
+
+      'Applied optimistic updates strategy to avoid flashes and user interactivity delays for enhancing user satisfaction and engagement with advantages of server actions',
+
+      'Led the transformation of previously disorganized and suboptimal code into a cohesive and streamlined architecture, for improved readability, maintainability, and scalability',
+
+      'Used Shadcn UI kit and Tailwind CSS for fast development in styling',
+    ],
+  },
+  'inner-app': {
+    title: 'Inner App - platform for designers to showcase their work',
+    bg: 'fromfolio',
+    details: {
+      stacks: ['Next 14', 'Typescript', 'React Query', 'Tailwind CSS', 'Shadcn UI', 'Date-fns'],
+      category: ['Typescript', 'NExtJS'],
+
+      images: [add_proj, dashboard, followers, messages, project, my, review_mentor, nots],
+    },
+    about: [
+      'Utilized advanced Next.js 14 functions extensively, using its capabilities to ensure optimal performance and seamless user experience',
+
+      'Implemented JWT for secure and stateless authentication in the project',
+
+      'Used React Query to manage client-side data fetching efficiently, especially in scenarios involving infinite queries',
+
+      'Applied optimistic updates strategy to avoid flashes and user interactivity delays for enhancing user satisfaction and engagement with advantages of server actions',
+
+      'Led the transformation of previously disorganized and suboptimal code into a cohesive and streamlined architecture, for improved readability, maintainability, and scalability',
+
+      'Used Shadcn UI kit and Tailwind CSS for fast development in styling',
     ],
   },
 };

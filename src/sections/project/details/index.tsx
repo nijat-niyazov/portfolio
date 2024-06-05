@@ -1,40 +1,42 @@
-import { Lock } from "@/assets/icons";
-import { MotionImage, MotionLi, MotionUl } from "@/components/motionGenerator";
-import { DetailsProps } from "@/containers/project";
-import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
-import { Fragment } from "react";
+import { Lock } from '@/assets/icons';
+import { MotionLi, MotionUl } from '@/components/motionGenerator';
+import { DetailsProps } from '@/containers/project';
+import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
+import { Fragment } from 'react';
+import ImagesCarousel from './ImageCarousel';
 
 const Details = ({ details: { stacks, category, images, url, repo } }: { details: DetailsProps }) => {
   return (
-    <div className="flex flex-col md:flex-row gap-10 items-start mb-14 ">
-      <MotionImage
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.5, type: "keyframes" }}
-        src={images[0]}
-        alt="project"
-        width={400}
-        height={400}
-        className="grow w-full md:h-[300px] object-cover "
-      />
+    <div className="flex flex-col md:flex-row gap-10 items-start justify-between mb-14">
+      <ImagesCarousel images={images} />
 
-      {/* <ImagesCarousel images={images} /> */}
-
-      <div className="md:w-3/5 rounded-lg">
+      <div className="lg:flex-1 rounded-lg">
         <h3 className="font-semibold text-xl pb-3 block border-b-2 border-gray-600">Details: </h3>
 
         <MotionUl role="list" className="grid gap-2 mt-4  pl-1" initial="hidden" animate="visible">
           <MotionLi className="flex items-center gap-2 opacity-80 hover:opacity-100">
             <span className="font-semibold">Category:</span>
-            <span className="font-light">{category.join(", ")}</span>
+            <span className="font-light">{category.join(', ')}</span>
           </MotionLi>
           <MotionLi className="flex items-center gap-2 opacity-80 hover:opacity-100 ">
-            <span className="font-semibold ">Project URL:</span>
-            <Link href={url} target="_blank" className="flex items-start gap-2 text-primary relative group font-light  ">
-              <span className="truncate max-w-[235px]">{url}</span>
-              <ArrowUpRight className="w-3.5 h-3.5 absolute -right-5 group-hover:-right-8   transition-all duration-200" />
-            </Link>
+            {url ? (
+              <Fragment>
+                <span className="font-semibold ">Project URL:</span>
+                <Link
+                  href={url}
+                  target="_blank"
+                  className="flex items-start gap-2 text-primary relative group font-light  "
+                >
+                  <span className="truncate max-w-[235px]">{url}</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 absolute -right-5 group-hover:-right-8   transition-all duration-200" />
+                </Link>
+              </Fragment>
+            ) : (
+              <p className="font-semibold flex items-center gap-3">
+                Private url <Lock />
+              </p>
+            )}
           </MotionLi>
           <MotionLi className="flex items-center gap-2 opacity-80 hover:opacity-100  ">
             <span className="font-semibold">Github code:</span>
@@ -61,7 +63,7 @@ const Details = ({ details: { stacks, category, images, url, repo } }: { details
                     opacity: 1,
                     y: 0,
                     scale: [1, 2, 3, 2, 1],
-                    transition: { delay: index * 0.1, duration: 1, type: "spring", stiffness: 250 },
+                    transition: { delay: index * 0.1, duration: 1, type: 'spring', stiffness: 250 },
                   }}
                   whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
                   className="rounded-full px-3 py-1 text-sm bg-primary cursor-default"
