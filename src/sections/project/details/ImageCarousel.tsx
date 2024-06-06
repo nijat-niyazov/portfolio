@@ -5,13 +5,8 @@ import Image, { StaticImageData } from 'next/image';
 import { cn } from '@/utils';
 import { useDotButton } from './EmblaCarouselDotButton';
 
-const SLIDE_COUNT = 5;
-const slides = Array.from(Array(SLIDE_COUNT).keys());
-
 const ImagesCarousel = ({ images }: { images: StaticImageData[] }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-
-  console.log(images);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
