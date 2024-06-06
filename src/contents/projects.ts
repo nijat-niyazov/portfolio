@@ -1,6 +1,23 @@
-import { eCommerce, fullStack, scrapper, w1, w2, w3, w4, w5, w6, w7, wishxImage } from '@/assets/images/projects';
+import { eCommerce, fullStack, scrapper, wishxImage } from '@/assets/images/projects';
+
+import { w1, w2, w3, w4, w5, w6, w7 } from '@/assets/images/projects/wishx';
+
+import {
+  add_proj,
+  cover_fromfolio,
+  dashboard,
+  followers,
+  messages,
+  my,
+  nots,
+  project,
+  review_mentor,
+} from '@/assets/images/projects/fromfolio';
+import { f, five, four, tr } from '@/assets/images/projects/inner-app';
 
 export const projects = [
+  { img: four, name: 'Inner System (Government Project)', url: 'nra-app' },
+  { img: cover_fromfolio, name: 'Fromfolio', url: 'fromfolio' },
   { img: wishxImage, name: 'Wishx.me', url: 'wishx' },
   { img: eCommerce, name: 'Full Stack E-commerce ', url: 'e-commerce' },
   { img: scrapper, name: 'Scrapper Table generates Excel file', url: 'scrapper' },
@@ -9,11 +26,85 @@ export const projects = [
 ];
 
 export const projectsWithDetails = {
+  fromfolio: {
+    title: 'Fromfolio - platform for designers to showcase their work',
+    bg: 'fromfolio',
+    details: {
+      stacks: [
+        'Next 14',
+        'Typescript',
+        'React Query',
+        'Tailwind CSS',
+        'React Hook Form',
+        'Zod',
+        'Shadcn UI',
+        'Date-fns',
+        'Stripe',
+        'Web Sockets',
+      ],
+      category: ['Typescript', 'NExtJS'],
+
+      images: [add_proj, dashboard, followers, messages, project, my, review_mentor, nots],
+      url: 'http://fromfolio.com',
+    },
+    about: [
+      ' Utilized advanced Next.js 14 functions extensively, using its capabilities to ensure optimal performance and seamless user experience',
+
+      'Implemented JWT for secure and stateless authentication in the project',
+
+      'Used React Query to manage client-side data fetching efficiently, especially in scenarios involving infinite queries',
+
+      'Applied optimistic updates strategy to avoid flashes and user interactivity delays for enhancing user satisfaction and engagement with advantages of server actions',
+
+      'Led the transformation of previously disorganized and suboptimal code into a cohesive and streamlined architecture, for improved readability, maintainability, and scalability',
+
+      'Used Shadcn UI kit and Tailwind CSS for fast development in styling',
+    ],
+  },
+  'nra-app': {
+    title: 'Management System - platform let coworkers to manage their flow',
+    bg: 'four',
+    details: {
+      stacks: [
+        'Next 14',
+        'Typescript',
+        'React Query',
+        'React Hook Form',
+        'Zod',
+        'Tailwind CSS',
+        'Shadcn UI',
+        'Date-fns',
+      ],
+      category: ['Typescript', 'NExtJS'],
+
+      images: [f, five, four, tr],
+    },
+    about: [
+      'Used Next.js 14 functions for optimal performance, seamless user experience and fast development which includes server-side rendering, static site generation, and serverless functions',
+
+      'Implemented JWT for secure and stateless authentication in the project',
+
+      'Used React Query to manage client-side data fetching efficiently, especially in scenarios involving infinite queries',
+
+      'Applied toast for user feedback and error handling, to enhance user satisfaction and engagement with advantages of server actions',
+
+      'Used Shadcn UI kit and Tailwind CSS for fast development in styling',
+    ],
+  },
   wishx: {
     title: 'Wishx.me',
     bg: 'wishx',
     details: {
-      stacks: ['Next.js 13', 'Typescript', 'Tailwind CSS', 'Zustand', 'Stripe', 'Pusher JS', ' Formik', 'Material UI'],
+      stacks: [
+        'Next.js 13',
+        'Typescript',
+        'Tailwind CSS',
+        'Zustand',
+        'Stripe',
+        'Pusher JS',
+        ' Formik',
+        'Material UI',
+      ],
       category: ['Typescript', 'NextJS'],
 
       images: [w1, w2, w3, w4, w5, w6, w7],

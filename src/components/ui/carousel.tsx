@@ -1,13 +1,12 @@
-"use client";
+'use client';
 
-import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react";
-import * as React from "react";
+import useEmblaCarousel, { type UseEmblaCarouselType } from 'embla-carousel-react';
+import * as React from 'react';
 
-import { cn } from "@/utils";
-import { HTMLAttributes, createContext, forwardRef } from "react";
+import { cn } from '@/utils';
+import { HTMLAttributes, createContext, forwardRef } from 'react';
 
 /* --------------------------------- Plugins -------------------------------- */
-import Autoplay from "embla-carousel-autoplay";
 // import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 
 /* ---------------------------------- Types --------------------------------- */
@@ -19,7 +18,7 @@ type CarouselPlugin = UseCarouselParameters[1];
 type CarouselProps = {
   opts?: CarouselOptions;
   plugins?: CarouselPlugin;
-  orientation?: "horizontal" | "vertical";
+  orientation?: 'horizontal' | 'vertical';
   setApi?: (api: CarouselApi) => void;
 };
 
@@ -39,20 +38,20 @@ export function useCarousel() {
   const context = React.useContext(CarouselContext);
 
   if (!context) {
-    throw new Error("useCarousel must be used within a <Carousel />");
+    throw new Error('useCarousel must be used within a <Carousel />');
   }
 
   return context;
 }
 
 const Carousel = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement> & CarouselProps>(
-  ({ orientation = "horizontal", opts, setApi, plugins, className, children, ...props }, ref) => {
-    const [carouselRef, api] = useEmblaCarousel({ ...opts, axis: orientation === "horizontal" ? "x" : "y" }, [
-      Autoplay({
-        delay: 0,
-        stopOnInteraction: false,
-        stopOnHover: true,
-      }),
+  ({ orientation = 'horizontal', opts, setApi, plugins, className, children, ...props }, ref) => {
+    const [carouselRef, api] = useEmblaCarousel({ ...opts, axis: orientation === 'horizontal' ? 'x' : 'y' }, [
+      // Autoplay({
+      //   delay: 0,
+      //   stopOnInteraction: false,
+      //   stopOnHover: true,
+      // }),
       // WheelGesturesPlugin(),
     ]);
 
@@ -62,10 +61,16 @@ const Carousel = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement> & Car
           carouselRef,
           api: api,
           opts,
-          orientation: orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
+          orientation: orientation || (opts?.axis === 'y' ? 'vertical' : 'horizontal'),
         }}
       >
-        <div ref={ref} className={cn("relative", className)} role="region" aria-roledescription="carousel" {...props}>
+        <div
+          ref={ref}
+          className={cn('relative', className)}
+          role="region"
+          aria-roledescription="carousel"
+          {...props}
+        >
           {children}
         </div>
       </CarouselContext.Provider>
@@ -73,27 +78,31 @@ const Carousel = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement> & Car
   }
 );
 
-Carousel.displayName = "Carousel";
+Carousel.displayName = 'Carousel';
 
-const CarouselContent = forwardRef<HTMLUListElement, HTMLAttributes<HTMLUListElement>>(({ className, ...props }, ref) => {
-  const { carouselRef, orientation } = useCarousel();
+const CarouselContent = forwardRef<HTMLUListElement, HTMLAttributes<HTMLUListElement>>(
+  ({ className, ...props }, ref) => {
+    const { carouselRef, orientation } = useCarousel();
 
-  return (
-    <div ref={carouselRef} className="overflow-hidden">
-      <ul ref={ref} className={cn("flex", className)} {...props} />
-      {/* orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col", */}
-    </div>
-  );
-});
+    return (
+      <div ref={carouselRef} className="overflow-hidden">
+        <ul ref={ref} className={cn('flex', className)} {...props} />
+        {/* orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col", */}
+      </div>
+    );
+  }
+);
 
-CarouselContent.displayName = "CarouselContent";
+CarouselContent.displayName = 'CarouselContent';
 
-const CarouselItem = forwardRef<HTMLLIElement, HTMLAttributes<HTMLLIElement>>(({ className, ...props }, ref) => {
-  const { orientation } = useCarousel();
+const CarouselItem = forwardRef<HTMLLIElement, HTMLAttributes<HTMLLIElement>>(
+  ({ className, ...props }, ref) => {
+    const { orientation } = useCarousel();
 
-  return <li ref={ref} role="group" aria-roledescription="slide" className={className} {...props} />;
-});
-CarouselItem.displayName = "CarouselItem";
+    return <li ref={ref} role="group" aria-roledescription="slide" className={className} {...props} />;
+  }
+);
+CarouselItem.displayName = 'CarouselItem';
 
 export { Carousel, CarouselContent, CarouselItem, type CarouselApi };
 
